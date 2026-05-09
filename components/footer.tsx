@@ -11,7 +11,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/bcdc-logo.jpg"
+                src="/images/bcdc-logo.png"
                 alt="BCDC Logo"
                 width={56}
                 height={56}
