@@ -96,7 +96,7 @@ export default function AboutPage() {
 
               <div className="relative aspect-square overflow-hidden rounded-2xl lg:aspect-[4/3]">
                 <Image
-                  src="/images/bcdc-logo.jpg"
+                  src="/images/bcdc-logo.jpgy "
                   alt="BCDC Logo"
                   fill
                   className="object-contain p-8"
