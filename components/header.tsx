@@ -21,7 +21,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/images/bcdc-logo.jpg"
+            src="/images/bcdc-logo.png"
             alt="BCDC Logo"
             width={48}
             height={48}
