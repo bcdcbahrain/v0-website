@@ -23,7 +23,7 @@ export default function HomePage() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/images/hero-global.jpg"
+              src="/images/hero-global.png"
               alt="Global community connected through dialogue"
               fill
               className="object-cover"
