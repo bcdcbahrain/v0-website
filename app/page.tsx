@@ -13,7 +13,7 @@ const HomePage = () => {
       link: "#about"
     },
     {
-      image: "/pre-footer-image.png", // Based on Source 35
+      image: "/pre-footer-image.png", // Based on Source 35 
       title: "Start a Meaningful Conversation",
       subtitle: "Our advisors are ready to talk and answer your questions about Islam.",
       cta: "Chat Now",
