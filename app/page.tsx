@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, MessageSquare, FileText, Heart, MapPin, Phone } from 'lucide-react';
 
-const BCDCHomePage = () => {
+const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
@@ -175,4 +175,4 @@ const BCDCHomePage = () => {
   );
 };
 
-export default BCDCHomePage;
+export default HomePage;
