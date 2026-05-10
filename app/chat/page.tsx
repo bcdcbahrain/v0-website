@@ -30,8 +30,14 @@ export default function ChatPage() {
               </h1>
               <p className="mt-4 text-pretty text-lg text-muted-foreground md:text-xl">
                 Have questions about Islam? Want to learn more about the correct
-                creed of faith? Our advisors are ready to talk with you.
+                creed of faith? Our advisors at IslamReligion.Com are ready to talk with you.
               </p>
+               <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
+              <a href="https://www.islamreligion.com/chat" target="_blank" rel="noopener noreferrer">
+                Live Chat on IslamReligion.Com
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
             </div>
           </div>
         </section>
@@ -41,7 +47,7 @@ export default function ChatPage() {
   <div className="container mx-auto px-4 md:px-6">
     <div className="mx-auto max-w-6xl">
       <h2 className="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">
-        Choose How to Connect 
+        Or Choose How to Connect 
       </h2>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
