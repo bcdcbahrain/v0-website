@@ -38,12 +38,12 @@ export default function ChatPage() {
                         </p>
               
                         <div className="mt-10">
-                          <Button asChild size="lg" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 px-8 py-6 text-lg">
-                            <a href="https://www.islamreligion.com/chat" target="_blank" rel="noopener noreferrer">
-                              Live Chat on IslamReligion.Com
-                              <ArrowRight className="ml-2 h-5 w-5" />
-                            </a>
-                          </Button>
+                        <Button asChild size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 px-8 py-6 text-lg">
+                          <a href="https://www.islamreligion.com/chat" target="_blank" rel="noopener noreferrer">
+                            Live Chat on IslamReligion.Com
+                            <ArrowRight className="ml-2 h-4 w-4" />
+                          </a>
+                        </Button>
                         </div>
                       </CardContent>
                     </Card>
