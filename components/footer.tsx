@@ -85,13 +85,13 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://newmuslim.net"
+                  href="https://www.newmuslims.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
                 >
                   <Globe className="h-4 w-4" />
-                  New Muslim Website
+                  New Muslim eLearning  Site
                 </a>
               </li>
             </ul>
