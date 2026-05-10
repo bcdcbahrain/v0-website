@@ -37,94 +37,101 @@ export default function ChatPage() {
         </section>
 
         {/* Chat Options */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="mx-auto max-w-4xl">
-              <h2 className="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">
-                Choose How to Connect
-              </h2>
+<section className="py-16 md:py-24">
+  <div className="container mx-auto px-4 md:px-6">
+    <div className="mx-auto max-w-6xl">
+      <h2 className="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">
+        Choose How to Connect 
+      </h2>
 
-              <div className="grid gap-6 md:grid-cols-2">
-                {/* WhatsApp Chat */}
-                <Card className="border-2 border-primary/20 transition-all hover:border-primary/40 hover:shadow-lg">
-                  <CardHeader className="pb-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
-                      <Phone className="h-6 w-6 text-green-600" />
-                    </div>
-                    <CardTitle className="mt-4 text-xl">WhatsApp Chat</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <p className="text-muted-foreground">
-                      Connect with our advisors directly through WhatsApp for a
-                      personal, one-on-one conversation about Islam.
-                    </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2">
-                        <Clock className="h-4 w-4 text-primary" />
-                        Available during business hours
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Globe className="h-4 w-4 text-primary" />
-                        English and Arabic support
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Heart className="h-4 w-4 text-primary" />
-                        Friendly and welcoming advisors
-                      </li>
-                    </ul>
-                    <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-                      <a
-                        href="https://wa.me/966597581139"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Chat on WhatsApp
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
-
-                {/* Phone Call */}
-                <Card className="border-2 border-secondary/30 transition-all hover:border-secondary/50 hover:shadow-lg">
-                  <CardHeader className="pb-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary/20">
-                      <Phone className="h-6 w-6 text-secondary-foreground" />
-                    </div>
-                    <CardTitle className="mt-4 text-xl">Phone Call</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <p className="text-muted-foreground">
-                      Prefer to speak directly? Call our centre and have a real-time
-                      conversation with one of our knowledgeable advisors.
-                    </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2">
-                        <Clock className="h-4 w-4 text-primary" />
-                        Available during business hours
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Globe className="h-4 w-4 text-primary" />
-                        Based in Kingdom of Bahrain
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Heart className="h-4 w-4 text-primary" />
-                        Patient and understanding team
-                      </li>
-                    </ul>
-                    <Button asChild variant="outline" className="w-full">
-                      <a href="tel:+97339377497">
-                        Call +973 3937 7497
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {/* WhatsApp Chat */}
+        <Card className="border-2 border-primary/20 transition-all hover:border-primary/40 hover:shadow-lg">
+          <CardHeader className="pb-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+              <Phone className="h-6 w-6 text-green-600" /> [cite: 9]
             </div>
-          </div>
-        </section>
+            <CardTitle className="mt-4 text-xl">WhatsApp Chat</CardTitle> [cite: 10]
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-sm text-muted-foreground">
+              Connect with our advisors directly through WhatsApp for a personal conversation. [cite: 11]
+            </p>
+            <Button asChild className="w-full bg-green-600 hover:bg-green-700">
+              <a href="https://wa.me/97339377497" target="_blank" rel="noopener noreferrer">
+                Chat on WhatsApp [cite: 16, 17]
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
 
+        {/* Facebook Messenger */}
+        <Card className="border-2 border-blue-500/20 transition-all hover:border-blue-500/40 hover:shadow-lg">
+          <CardHeader className="pb-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
+              <MessageCircle className="h-6 w-6 text-blue-600" />
+            </div>
+            <CardTitle className="mt-4 text-xl">Facebook</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-sm text-muted-foreground">
+              Reach out to our team via Facebook Messenger for authentic Islamic guidance.
+            </p>
+            <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
+              <a href="https://m.me/100630161994563?ref=islamreligion_chat_page" target="_blank" rel="noopener noreferrer">
+                Chat on Messenger
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
+
+        {/* Instagram */}
+        <Card className="border-2 border-pink-500/20 transition-all hover:border-pink-500/40 hover:shadow-lg">
+          <CardHeader className="pb-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-pink-100">
+              <Heart className="h-6 w-6 text-pink-600" />
+            </div>
+            <CardTitle className="mt-4 text-xl">Instagram</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-sm text-muted-foreground">
+              Send us a direct message on Instagram to start your journey today.
+            </p>
+            <Button asChild className="w-full bg-pink-600 hover:bg-pink-700">
+              <a href="https://ig.me/m/islam.in.3.minutes" target="_blank" rel="noopener noreferrer">
+                DM on Instagram
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
+
+        {/* Phone Call */}
+        <Card className="border-2 border-secondary/30 transition-all hover:border-secondary/50 hover:shadow-lg">
+          <CardHeader className="pb-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary/20">
+              <Phone className="h-6 w-6 text-secondary-foreground" /> [cite: 19]
+            </div>
+            <CardTitle className="mt-4 text-xl">Phone Call</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-sm text-muted-foreground">
+              Prefer to speak directly? Call our centre for a real-time conversation. [cite: 21]
+            </p>
+            <Button asChild variant="outline" className="w-full">
+              <a href="tel:+97339377497">
+                Call +973 3937 7497 [cite: 26]
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </div>
+</section>
         {/* What to Expect */}
         <section className="bg-muted py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
