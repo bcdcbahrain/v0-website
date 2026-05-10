@@ -40,7 +40,7 @@ const resources = [
     category: "Intermediate",
     type: "PDF Guide",
     icon: FileText,
-    downloadUrl: "https://drive.google.com//uc?export=download&id=1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA",
   },
   {
     title: "Understanding the Quran",
