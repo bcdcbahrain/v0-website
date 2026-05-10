@@ -41,7 +41,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/chat"
+                  href="https://www.islamreligion.com/chat"
                   className="text-sm text-background/70 transition-colors hover:text-secondary"
                 >
                   Chat
