@@ -58,10 +58,14 @@ export default function ChatPage() {
               Connect with our advisors directly through WhatsApp for a personal conversation. [cite: 11]
             </p>
             <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-              <a href="https://wa.me/97339377497" target="_blank" rel="noopener noreferrer">
-                Chat on WhatsApp [cite: 16, 17]
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
+              <a
+                    href="https://wa.me/966597581139"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    Start WhatsApp Chat
+                  </a>
             </Button>
           </CardContent>
         </Card>
@@ -118,11 +122,11 @@ export default function ChatPage() {
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-sm text-muted-foreground">
-              Prefer to speak directly? Call our centre for a real-time conversation. [cite: 21]
+              Prefer to speak directly? Call our centre for a real-time conversation. 
             </p>
             <Button asChild variant="outline" className="w-full">
               <a href="tel:+97339377497">
-                Call +973 3937 7497 [cite: 26]
+                Call +973 3937 7497
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
