@@ -20,19 +20,20 @@ export default function HomePage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden">
+        <section className="relative min-h-[500px] overflow-hidden md:min-h-[550px] lg:min-h-[600px]">
           <div className="absolute inset-0">
             <Image
-              src="/images/hero-global.png" 
+              src="/images/hero-global.png"
               alt="Global community connected through dialogue"
               fill
-              className="object-cover"
+              className="object-cover object-center"
+              sizes="100vw"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/70 to-foreground/50" />
+            <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/75 to-foreground/40" />
           </div>
 
-          <div className="container relative mx-auto px-4 py-24 md:px-6 md:py-32 lg:py-40">
+          <div className="container relative mx-auto flex min-h-[500px] items-center px-4 py-16 md:min-h-[550px] md:px-6 md:py-20 lg:min-h-[600px] lg:py-24">
             <div className="max-w-2xl space-y-6">
               <h1 className="text-balance text-4xl font-bold tracking-tight text-background md:text-5xl lg:text-6xl">
                 Welcome to Busaiteen Chat Dialogue Centre
