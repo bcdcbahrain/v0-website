@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { HeroSlider } from "@/components/hero-slider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -19,47 +20,8 @@ export default function HomePage() {
       <Header />
 
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative min-h-[500px] overflow-hidden md:min-h-[550px] lg:min-h-[600px]">
-          <div className="absolute inset-0">
-            <Image
-              src="/images/hero-global.png"
-              alt="Global community connected through dialogue"
-              fill
-              className="object-cover object-center"
-              sizes="100vw"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/75 to-foreground/40" />
-          </div>
-
-          <div className="container relative mx-auto flex min-h-[500px] items-center px-4 py-16 md:min-h-[550px] md:px-6 md:py-20 lg:min-h-[600px] lg:py-24">
-            <div className="max-w-2xl space-y-6">
-              <h1 className="text-balance text-4xl font-bold tracking-tight text-background md:text-5xl lg:text-6xl">
-                Welcome to Busaiteen Chat Dialogue Centre
-              </h1>
-              <p className="text-pretty text-lg text-background/80 md:text-xl">
-                Conveying the Correct Creed of Faith in an Era of Division
-              </p>
-              <div className="flex flex-col gap-4 sm:flex-row">
-                <Button size="lg" asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
-                  <Link href="/about">
-                    Discover the Path to Guidance
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  asChild
-                  className="border-background/30 bg-transparent text-background hover:bg-background/10"
-                >
-                  <Link href="/chat">Start a Conversation</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Hero Slider Section */}
+        <HeroSlider />
 
         {/* Mission Section */}
         <section className="py-16 md:py-24">
