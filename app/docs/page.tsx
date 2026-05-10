@@ -11,36 +11,41 @@ import {
   FileText,
   Users,
   Heart,
+  Eye,
   ExternalLink,
   ArrowRight,
 } from "lucide-react";
 
 const resources = [
   {
-    title: "Introduction to Islam",
-    description:
-      "A comprehensive guide for those new to learning about Islam and its fundamental beliefs.",
-    category: "Beginner",
-    type: "PDF Guide",
-    icon: BookOpen,
-  },
-  {
-    title: "The Pillars of Faith",
-    description:
-      "Learn about the six articles of faith that form the foundation of Islamic belief.",
-    category: "Beginner",
-    type: "PDF Guide",
-    icon: FileText,
-  },
-  // Added the new resource here
-  {
-    title: "The Architecture of Faith",
+     title: "The Architecture of Faith",
     description:
       "An objective framework for understanding Islam's claims of divine truth and its principles for religious tolerance.",
     category: "Intermediate",
     type: "PDF Guide",
     icon: FileText,
+    driveUrl: "https://drive.google.com/file/d/1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA/view?usp=sharing",
     downloadUrl: "https://drive.google.com/uc?export=download&id=1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA",
+  },
+  {
+     title: "Articulating Islam: Questions & Answers",
+    description:
+      "Master the art of answering questions asked about Islam by Non-Muslims.",
+    category: "Beginner",
+    type: "PDF Guide",
+    icon: FileText,
+    driveUrl: "https://drive.google.com/file/d/1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy",
+  },
+  // Added the new resource here
+  {
+    title: "Articulating Islam: Questions & Answers",
+    description:
+      "Master the art of answering questions asked about Islam by Non-Muslims.",
+    category: "Beginner",
+    type: "PDF Guide",
+    icon: FileText,
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy",
   },
   {
     title: "Understanding the Quran",
@@ -111,7 +116,7 @@ export default function DocsPage() {
               </h1>
               <p className="mt-4 text-pretty text-lg text-muted-foreground md:text-xl">
                 Explore our collection of authentic Islamic materials. All resources
-                are free and available for download.
+                are free and available for view or download.
               </p>
             </div>
           </div>
@@ -155,25 +160,33 @@ export default function DocsPage() {
                       <p className="text-sm text-muted-foreground">
                         {resource.description}
                       </p>
-                      <div className="flex items-center justify-between">
+                      <div className="flex flex-col gap-3">
                         <span className="text-xs text-muted-foreground">
                           {resource.type}
                         </span>
-                        <Button
-                          asChild
-                          size="sm"
-                          variant="outline"
-                          className="opacity-80 transition-opacity group-hover:opacity-100"
-                        >
-                          <a 
-                            href={resource.downloadUrl || "#"} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
+                        <div className="flex items-center gap-2">
+                          {/* View Button for Online Reading */}
+                          <Button
+                            asChild
+                            size="sm"
+                            variant="secondary"
+                            className="flex-1 opacity-80 transition-opacity group-hover:opacity-100"
+                          >
+                            <a href={resource.driveUrl} target="_blank" rel="noopener noreferrer">
+                              <Eye className="mr-2 h-4 w-4" />
+                              View
+                            </a>
+                          </Button>
+                          {/* Original Download Button */}
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="flex-1 opacity-80 transition-opacity group-hover:opacity-100"
                           >
                             <Download className="mr-2 h-4 w-4" />
                             Download
-                          </a>
-                        </Button>
+                          </Button>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
