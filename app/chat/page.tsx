@@ -116,7 +116,7 @@ export default function ChatPage() {
         <Card className="border-2 border-secondary/30 transition-all hover:border-secondary/50 hover:shadow-lg">
           <CardHeader className="pb-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary/20">
-              <Phone className="h-6 w-6 text-secondary-foreground" /> [cite: 19]
+              <Phone className="h-6 w-6 text-secondary-foreground" />
             </div>
             <CardTitle className="mt-4 text-xl">Phone Call</CardTitle>
           </CardHeader>
