@@ -74,7 +74,7 @@ export default function ChatPage() {
                     </ul>
                     <Button asChild className="w-full bg-green-600 hover:bg-green-700">
                       <a
-                        href="https://wa.me/97339377497"
+                        href="https://wa.me/966597581139"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
