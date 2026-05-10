@@ -1,178 +1,254 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, MessageSquare, FileText, Heart, MapPin, Phone } from 'lucide-react';
+import Image from "next/image";
+import Link from "next/link";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { HeroSlider } from "@/components/hero-slider";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Globe,
+  Users,
+  MessageCircle,
+  BookOpen,
+  Heart,
+  ArrowRight,
+} from "lucide-react";
 
-const HomePage = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      image: "/hero-global.png",
-      title: "Welcome to Busaiteen Chat Dialogue Centre (BCDC)",
-      subtitle: "Conveying the Correct Creed of Faith in an Era of Division",
-      cta: "Discover the Path to Guidance",
-      link: "#about"
-    },
-    {
-      image: "/pre-footer-image.png", // Based on Source 35 
-      title: "Start a Meaningful Conversation",
-      subtitle: "Our advisors are ready to talk and answer your questions about Islam.",
-      cta: "Chat Now",
-      link: "/chat"
-    }
-  ];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const nextSlide = () => setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  const prevSlide = () => setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-
+export default function HomePage() {
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white shadow-md px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="BCDC Logo" className="h-12 w-12 object-contain" />
-          <span className="font-bold text-xl text-blue-900 hidden md:block">BCDC Bahrain</span>
-        </div>
-        <div className="flex gap-6 font-medium">
-          <a href="/" className="text-blue-600">Home</a>
-          <a href="/chat" className="hover:text-blue-600 transition">Chat</a>
-          <a href="/docs" className="hover:text-blue-600 transition">Docs</a>
-          <a href="/about" className="hover:text-blue-600 transition">About</a>
-        </div>
-      </nav>
+    <div className="flex min-h-screen flex-col bg-background">
+      <Header />
 
-      {/* Hero Slider Section */}
-      <section className="relative w-full h-[500px] md:h-[600px] overflow-hidden bg-slate-900">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            {/* Background Image with Overlay */}
-            <div className="absolute inset-0 bg-black/50 z-10" />
-            <img
-              src={slide.image}
-              alt={slide.title}
-              className="w-full h-full object-cover md:object-contain bg-slate-800"
-            />
-            
-            {/* Content Container */}
-            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
-              <h1 className="text-3xl md:text-5xl font-bold text-white max-w-4xl mb-4 drop-shadow-lg">
-                {slide.title}
-              </h1>
-              <p className="text-lg md:text-xl text-slate-200 max-w-2xl mb-8 drop-shadow-md">
-                {slide.subtitle}
+      <main className="flex-1">
+        {/* Hero Slider Section */}
+        <HeroSlider />
+
+        {/* Mission Section */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                Our Mission
+              </h2>
+              <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground">
+                At Busaiteen Chat Dialogue Centre, based in the Kingdom of Bahrain,
+                we are dedicated to fulfilling the mission of our beloved Prophet
+                (peace be upon him). Through our online platform, we provide a safe
+                and welcoming space for seekers of truth to engage in meaningful
+                dialogue about Islam.
               </p>
-              <a
-                href={slide.link}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-transform hover:scale-105"
-              >
-                {slide.cta}
-              </a>
+              <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
+                To convey the gift of Islam and be a cause for Hidaya (guidance) for
+                thousands of non-Muslims globally.
+              </p>
             </div>
           </div>
-        ))}
+        </section>
 
-        {/* Slider Controls */}
-        <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 bg-white/20 hover:bg-white/40 rounded-full text-white">
-          <ChevronLeft size={32} />
-        </button>
-        <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 bg-white/20 hover:bg-white/40 rounded-full text-white">
-          <ChevronRight size={32} />
-        </button>
-      </section>
+        {/* Feature Cards */}
+        <section className="bg-muted py-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid gap-8 md:grid-cols-2">
+              <Card className="border-0 bg-card shadow-lg">
+                <CardContent className="flex flex-col items-center p-8 text-center">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                    <Globe className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="mt-6 text-xl font-semibold text-card-foreground">
+                    Global Reach
+                  </h3>
+                  <p className="mt-3 text-muted-foreground">
+                    We connect with visitors from all corners of the globe, breaking
+                    down barriers and building bridges of understanding.
+                  </p>
+                </CardContent>
+              </Card>
 
-      {/* Main Content - Mission & Features */}
-      <main className="max-w-6xl mx-auto px-6 py-16">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Discover the Path to Guidance</h2> [cite: 8]
-          <p className="text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            At Busaiteen Chat Dialogue Centre, based in the Kingdom of Bahrain, we provide a safe and 
-            welcoming space for seekers of truth to engage in meaningful dialogue about Islam. [cite: 11, 12]
-          </p>
-        </div>
-
-        {/* Feature Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
-            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-              <MessageSquare className="text-blue-600" />
+              <Card className="border-0 bg-card shadow-lg">
+                <CardContent className="flex flex-col items-center p-8 text-center">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-secondary/30">
+                    <Users className="h-8 w-8 text-secondary-foreground" />
+                  </div>
+                  <h3 className="mt-6 text-xl font-semibold text-card-foreground">
+                    Expert Guidance
+                  </h3>
+                  <p className="mt-3 text-muted-foreground">
+                    Our sessions are led by experienced Da&apos;ees and trainers,
+                    including senior advisors from IslamReligion.com.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
-            <h3 className="text-xl font-bold mb-3">Expert Guidance</h3> [cite: 15]
-            <p className="text-slate-600">Sessions led by experienced Da'ees and trainers from IslamReligion.com.</p> [cite: 15]
+
+            <div className="mt-8 text-center">
+              <Button asChild variant="outline">
+                <Link href="/about">
+                  Learn More About Us
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Start a Conversation */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid items-center gap-12 lg:grid-cols-2">
+              <div className="space-y-6">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary">
+                  <MessageCircle className="h-7 w-7 text-primary-foreground" />
+                </div>
+                <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                  Start a Conversation
+                </h2>
+                <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
+                  Have questions about Islam? Want to learn more about the correct
+                  creed of faith? Our advisors are ready to talk.
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary/30">
+                      <span className="text-xs font-bold text-secondary-foreground">✓</span>
+                    </div>
+                    <p className="text-muted-foreground">
+                      <strong className="text-foreground">{"Let's Talk:"}</strong> Connect
+                      with a Chat Advisor today to begin your journey.
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary/30">
+                      <span className="text-xs font-bold text-secondary-foreground">✓</span>
+                    </div>
+                    <p className="text-muted-foreground">
+                      <strong className="text-foreground">Peace be upon you:</strong> We
+                      welcome all visitors with open hearts and minds.
+                    </p>
+                  </li>
+                </ul>
+                <Button size="lg" asChild>
+                  <Link href="/chat">
+                    Chat with an Advisor
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+
+              <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted lg:aspect-[4/3]">
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
+                  <MessageCircle className="h-24 w-24 text-primary/40" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Browse Resources */}
+        <section className="bg-muted py-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid items-center gap-12 lg:grid-cols-2">
+              <div className="relative order-2 aspect-square overflow-hidden rounded-2xl bg-card lg:order-1 lg:aspect-[4/3]">
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-secondary/20 to-primary/20">
+                  <BookOpen className="h-24 w-24 text-primary/40" />
+                </div>
+              </div>
+
+              <div className="order-1 space-y-6 lg:order-2">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-secondary">
+                  <BookOpen className="h-7 w-7 text-secondary-foreground" />
+                </div>
+                <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                  Browse Islamic Resources
+                </h2>
+                <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
+                  Want to learn about Islam on your own? Want to browse through the
+                  correct and authentic details of faith? Our resources are free and
+                  downloadable.
+                </p>
+                <Button size="lg" asChild variant="outline">
+                  <Link href="/docs">
+                    Explore Resources
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Support the Mission */}
+        <section className="relative overflow-hidden py-16 md:py-24">
+          <div className="absolute inset-0">
+            <Image
+              src="/images/support-mission.jpg"
+              alt="Support the mission"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/90 to-foreground/85" />
           </div>
 
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
-            <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-              <FileText className="text-green-600" />
-            </div>
-            <h3 className="text-xl font-bold mb-3">Free Resources</h3> [cite: 24]
-            <p className="text-slate-600">Browse through authentic, free, and downloadable Islamic materials.</p> [cite: 24]
-          </div>
+          <div className="container relative mx-auto px-4 md:px-6">
+            <div className="mx-auto max-w-3xl text-center">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-secondary">
+                <Heart className="h-8 w-8 text-secondary-foreground" />
+              </div>
+              <h2 className="mt-6 text-balance text-3xl font-bold tracking-tight text-background md:text-4xl">
+                Support the Mission
+              </h2>
+              <p className="mt-6 text-pretty text-lg leading-relaxed text-background/80">
+                Every good deed is an investment in your Hereafter. We invite you to
+                support our Online Da&apos;wah Project to help us reach even more
+                seekers across the globe.
+              </p>
 
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
-            <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Heart className="text-red-600" />
+              <blockquote className="mt-8 border-l-4 border-secondary pl-6 text-left">
+                <p className="text-lg italic text-background/90">
+                  {'"Whoever guides someone to goodness will have a reward like the one who did it."'}
+                </p>
+                <cite className="mt-2 block text-sm text-secondary">
+                  — Sahih Muslim
+                </cite>
+              </blockquote>
+
+              <div className="mt-8 space-y-4">
+                <h3 className="text-xl font-semibold text-background">
+                  How You Can Help:
+                </h3>
+                <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+                  <div className="flex items-center gap-2 text-background/80">
+                    <Heart className="h-5 w-5 text-secondary" />
+                    <span>
+                      <strong className="text-background">Donate:</strong> We gratefully
+                      accept Zakah and Sadaqah
+                    </span>
+                  </div>
+                  <div className="hidden h-1 w-1 rounded-full bg-background/40 sm:block" />
+                  <div className="flex items-center gap-2 text-background/80">
+                    <Globe className="h-5 w-5 text-secondary" />
+                    <span>
+                      <strong className="text-background">Spread the Word:</strong> Share
+                      our platform
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <Button
+                  size="lg"
+                  asChild
+                  className="bg-secondary text-secondary-foreground hover:bg-secondary/90"
+                >
+                  <Link href="/about#contact">Contact Us to Support</Link>
+                </Button>
+              </div>
             </div>
-            <h3 className="text-xl font-bold mb-3">Support the Mission</h3> [cite: 26]
-            <p className="text-slate-600">Invest in your Hereafter by supporting our Online Da'wah Project.</p> [cite: 27]
           </div>
-        </div>
+        </section>
       </main>
 
-      {/* Support Section (Pre-Footer) */}
-      <section className="bg-blue-900 text-white py-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">How You Can Help</h2> [cite: 29]
-          <div className="grid md:grid-cols-2 gap-8 mb-10">
-            <div className="bg-white/10 p-6 rounded-xl">
-              <h4 className="font-bold text-xl mb-2">Donate</h4> [cite: 30]
-              <p className="text-blue-100 text-sm">We gratefully accept Zakah and Sadaqah to sustain our mission.</p> [cite: 30]
-            </div>
-            <div className="bg-white/10 p-6 rounded-xl">
-              <h4 className="font-bold text-xl mb-2">Spread the Word</h4> [cite: 31]
-              <p className="text-blue-100 text-sm">Share our platform with those seeking guidance globally.</p> [cite: 31]
-            </div>
-          </div>
-          <p className="italic text-blue-200">
-            "Whoever guides someone to goodness will have a reward like the one who did it." — Sahih Muslim
-          </p> [cite: 28]
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-slate-900 text-slate-400 py-12 px-6 border-t border-slate-800">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
-          <div>
-            <h4 className="text-white font-bold mb-4 flex items-center gap-2">
-              <MapPin size={18} /> Location
-            </h4>
-            <p>Kingdom of Bahrain</p> [cite: 33]
-          </div>
-          <div>
-            <h4 className="text-white font-bold mb-4 flex items-center gap-2">
-              <Phone size={18} /> Contact Us
-            </h4>
-            <p>WhatsApp: +973 3937 7497</p> [cite: 34]
-          </div>
-          <div className="flex flex-col gap-2">
-            <h4 className="text-white font-bold mb-4">Quick Links</h4>
-            <a href="https://www.islamreligion.com" className="hover:text-blue-400">IslamReligion.com</a> [cite: 37]
-            <a href="#" className="hover:text-blue-400">New Muslim Website</a> [cite: 37]
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
-};
-
-export default HomePage;
+}
