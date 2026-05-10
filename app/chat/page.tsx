@@ -49,9 +49,9 @@ export default function ChatPage() {
         <Card className="border-2 border-primary/20 transition-all hover:border-primary/40 hover:shadow-lg">
           <CardHeader className="pb-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
-              <Phone className="h-6 w-6 text-green-600" /> [cite: 9]
+              <Phone className="h-6 w-6 text-green-600" />
             </div>
-            <CardTitle className="mt-4 text-xl">WhatsApp Chat</CardTitle> [cite: 10]
+            <CardTitle className="mt-4 text-xl">WhatsApp Chat</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-sm text-muted-foreground">
