@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/chat", label: "Chat" },
+  { href: "https://www.islamreligion.com/chat", label: "Chat" },
   { href: "/docs", label: "Docs" },
   { href: "/about", label: "About" },
 ];
