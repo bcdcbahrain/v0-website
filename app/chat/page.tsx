@@ -19,28 +19,37 @@ export default function ChatPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-primary/10 to-background py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="mx-auto max-w-3xl text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary">
-                <MessageCircle className="h-8 w-8 text-primary-foreground" />
-              </div>
-              <h1 className="mt-6 text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-                Start a Conversation
-              </h1>
-              <p className="mt-4 text-pretty text-lg text-muted-foreground md:text-xl">
-                Have questions about Islam? Want to learn more about the correct
-                creed of faith? Our advisors at IslamReligion.Com are ready to talk with you.
-              </p>
-               <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
-              <a href="https://www.islamreligion.com/chat" target="_blank" rel="noopener noreferrer">
-                Live Chat on IslamReligion.Com
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-            </div>
-          </div>
-        </section>
+                      <section className="bg-gradient-to-b from-primary/10 to-background py-16 md:py-24">
+                <div className="container mx-auto px-4 md:px-6">
+                  <div className="mx-auto max-w-3xl">
+                    <Card className="border-2 border-primary/20 shadow-xl overflow-hidden">
+                      <CardContent className="pt-12 pb-12 px-6 text-center">
+                        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary mb-6">
+                          <MessageCircle className="h-8 w-8 text-primary-foreground" />
+                        </div>
+                        
+                        <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+                          Start a Conversation
+                        </h1>
+                        
+                        <p className="mt-6 text-pretty text-lg text-muted-foreground md:text-xl max-w-2xl mx-auto">
+                          Have questions about Islam? Want to learn more about the correct
+                          creed of faith? Our advisors at <strong>IslamReligion.Com</strong> are ready to talk with you.
+                        </p>
+              
+                        <div className="mt-10">
+                          <Button asChild size="lg" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 px-8 py-6 text-lg">
+                            <a href="https://www.islamreligion.com/chat" target="_blank" rel="noopener noreferrer">
+                              Live Chat on IslamReligion.Com
+                              <ArrowRight className="ml-2 h-5 w-5" />
+                            </a>
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              </section>
 
         {/* Chat Options */}
 <section className="py-16 md:py-24">
