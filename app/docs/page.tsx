@@ -179,10 +179,12 @@ export default function DocsPage() {
                           </Button>
                           {/* Original Download Button */}
                           <Button
+                            asChild
                             size="sm"
                             variant="outline"
                             className="flex-1 opacity-80 transition-opacity group-hover:opacity-100"
                           >
+                            <a href={resource.downloadUrl} target="_blank" rel="noopener noreferrer">
                             <Download className="mr-2 h-4 w-4" />
                             Download
                           </Button>
