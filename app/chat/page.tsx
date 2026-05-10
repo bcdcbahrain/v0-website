@@ -191,7 +191,7 @@ export default function ChatPage() {
               <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
                 <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
                   <a
-                    href="https://wa.me/97339377497"
+                    href="https://wa.me/966597581139"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
