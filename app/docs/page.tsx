@@ -31,7 +31,7 @@ const resources = [
   {
      title: "Articulating Islam: Questions & Answers",
     description:
-      "Master the art of answering questions asked about Islam by Non-Muslims.",
+      "Master the art of answering difficult questions asked about Islam by Non-Muslims.",
     category: "Beginner",
     type: "PDF Guide",
     icon: FileText,
@@ -41,7 +41,7 @@ const resources = [
   {
     title: "The 99 Beautiful Names",
     description:
-      "Watch a video series and learn the 99 Beautiful Names of Allah.",
+      "Discover the profound meanings and spiritual depth behind the beautiful names of Allah in this enlightening video presentation.",
     category: "Beginner",
     type: "MP4 Video",
     icon: Video,
