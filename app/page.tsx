@@ -21,17 +21,16 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative min-h-[500px] overflow-hidden md:min-h-[550px] lg:min-h-[600px]">
-          <div className="absolute inset-0">
-            <Image
-              src="/images/hero-global.png"
-              alt="Global community connected through dialogue"
-              fill
-              className="object-cover object-center"
-              sizes="100vw"
-              priority
+          <div className="w-full relative overflow-hidden">
+            <img 
+              src="/hero-global.png" 
+              alt="BCDC Global Connection Header"
+              className="w-full h-auto object-contain max-h-[500px]" 
+              // "object-contain" ensures the full width image is visible without clipping.
+              // "h-auto" allows the height to adjust based on the wide aspect ratio.
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/75 to-foreground/40" />
           </div>
+        </div>
 
           <div className="container relative mx-auto flex min-h-[500px] items-center px-4 py-16 md:min-h-[550px] md:px-6 md:py-20 lg:min-h-[600px] lg:py-24">
             <div className="max-w-2xl space-y-6">
