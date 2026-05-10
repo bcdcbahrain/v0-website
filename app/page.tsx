@@ -64,7 +64,7 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-0 bg-card shadow-lg">
+              <Card className="border-0 bg-card shadow-lg"> 
                 <CardContent className="flex flex-col items-center p-8 text-center">
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-secondary/30">
                     <Users className="h-8 w-8 text-secondary-foreground" />
