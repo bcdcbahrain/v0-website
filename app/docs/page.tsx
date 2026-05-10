@@ -32,6 +32,16 @@ const resources = [
     type: "PDF Guide",
     icon: FileText,
   },
+  // Added the new resource here
+  {
+    title: "The Architecture of Faith",
+    description:
+      "An objective framework for understanding Islam's claims of divine truth and its principles for religious tolerance.",
+    category: "Intermediate",
+    type: "PDF Guide",
+    icon: FileText,
+    downloadUrl: "https://drive.google.com/file/d/1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA/view?usp=sharing",
+  },
   {
     title: "Understanding the Quran",
     description:
@@ -150,12 +160,19 @@ export default function DocsPage() {
                           {resource.type}
                         </span>
                         <Button
+                          asChild
                           size="sm"
                           variant="outline"
                           className="opacity-80 transition-opacity group-hover:opacity-100"
                         >
-                          <Download className="mr-2 h-4 w-4" />
-                          Download
+                          <a 
+                            href={resource.downloadUrl || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            <Download className="mr-2 h-4 w-4" />
+                            Download
+                          </a>
                         </Button>
                       </div>
                     </CardContent>
