@@ -14,6 +14,7 @@ import {
   Eye,
   ExternalLink,
   ArrowRight,
+  Video,
 } from "lucide-react";
 
 const resources = [
@@ -37,15 +38,15 @@ const resources = [
     driveUrl: "https://drive.google.com/file/d/1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy/view?usp=sharing",
     downloadUrl: "https://drive.google.com/uc?export=download&id=1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy",
   },
-  // Added the new resource here
   {
-    title: "Articulating Islam: Questions & Answers",
+    title: "The 99 Beautiful Names",
     description:
-      "Master the art of answering questions asked about Islam by Non-Muslims.",
+      "Watch a video series and learn the 99 Beautiful Names of Allah.",
     category: "Beginner",
-    type: "PDF Guide",
-    icon: FileText,
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy",
+    type: "MP4 Video",
+    icon: Video,
+    driveUrl: "https://drive.google.com/file/d/1gkqijiwYyObdEt0z-sTf5ZdTWbpaBOtq/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1gkqijiwYyObdEt0z-sTf5ZdTWbpaBOtq",
   },
   {
     title: "Understanding the Quran",
