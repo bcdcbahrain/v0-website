@@ -150,6 +150,16 @@ const categories = [
         downloadUrl: "https://drive.google.com/uc?export=download&id=1COzaRvKPBHSZZs_LoGchR6hXWFgnrgY7",
       },
       {
+        title: "Be Like The Bee",
+        description: "Exploring Bio-mimicry, natural mechanics and spiritual reflections in Surah An-Nahl",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: Users,
+        driveUrl: "https://drive.google.com/file/d/1itMSAhT5RwNqGo2Tr7NmuoqopxHWbhoP/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1itMSAhT5RwNqGo2Tr7NmuoqopxHWbhoP",
+      },
+      {
         title: "Quranic Miracles",
         description: "Exploring the linguistic and scientific signs within the text.",
         category: "Beginner",
