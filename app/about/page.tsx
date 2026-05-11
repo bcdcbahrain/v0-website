@@ -185,7 +185,7 @@ export default function AboutPage() {
                     </p>
                     <Button asChild variant="link" className="mt-4">
                       <a
-                        href="https://newmuslim.net"
+                        href="https://www.newmuslims.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
