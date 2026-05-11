@@ -15,73 +15,105 @@ import {
   ExternalLink,
   ArrowRight,
   Video,
-  Star,
-  Info,
-  ShieldCheck,
-  HelpCircle,
+  Bookmark,
 } from "lucide-react";
 
-// Categorized resources based on the user-centric strategy
+// Categorized Resources following the recommended structure
 const categories = [
   {
     id: "getting-started",
-    title: "1. Getting Started: The Basics",
-    description: "Foundational knowledge for those exploring Islam for the first time.",
+    title: "Getting Started",
+    description: "Foundational knowledge for those beginning their journey.",
     resources: [
       {
         title: "Introduction to Islam",
-        description: "A comprehensive guide for those new to learning about Islam.",
+        description: "A comprehensive guide for those new to learning about fundamental beliefs.",
         category: "Beginner",
         type: "PDF Guide",
-        icon: Info,
+        icon: BookOpen,
         driveUrl: "#",
         downloadUrl: "#",
       },
       {
-        title: "Articulating Islam: Q&A",
-        description: "Master answering difficult questions asked about Islam.",
+        title: "Common Questions About Islam",
+        description: "Answers to frequently asked questions about Islam and Muslim practices.",
+        category: "Beginner",
+        type: "FAQ Document",
+        icon: FileText,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+      {
+        title: "Understanding Divine Truth",
+        description: "A starter guide on how to approach Islamic theology objectively.",
         category: "Beginner",
         type: "PDF Guide",
         icon: FileText,
-        driveUrl: "https://drive.google.com/file/d/1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy/view?usp=sharing",
-        downloadUrl: "https://drive.google.com/uc?export=download&id=1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy",
+        driveUrl: "#",
+        downloadUrl: "#",
       },
-      // ... more items would be added here
-    ]
+      {
+        title: "The Path of a New Muslim",
+        description: "First steps and what to expect in your initial days of faith.",
+        category: "Beginner",
+        type: "PDF Guide",
+        icon: Users,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+    ],
   },
   {
-    id: "core-beliefs",
-    title: "2. Core Beliefs: The Pillars of Faith",
-    description: "Deep dive into the structural and spiritual foundations of Islamic belief.",
+    id: "theology-creed",
+    title: "Theology & Creed (Aqidah)",
+    description: "Deepen your understanding of Islamic core beliefs and articles of faith.",
     resources: [
       {
         title: "The Architecture of Faith",
-        description: "An objective framework for understanding Islam's claims of divine truth.",
+        description: "An objective framework for understanding claims of divine truth.",
         category: "Intermediate",
         type: "PDF Guide",
-        icon: ShieldCheck,
+        icon: FileText,
         driveUrl: "https://drive.google.com/file/d/1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA",
       },
       {
         title: "The 99 Beautiful Names",
-        description: "Discover the profound meanings and spiritual depth behind the names of Allah.",
+        description: "Discover the profound meanings and spiritual depth behind Allah's names.",
         category: "Beginner",
         type: "MP4 Video",
         icon: Video,
         driveUrl: "https://drive.google.com/file/d/1gkqijiwYyObdEt0z-sTf5ZdTWbpaBOtq/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1gkqijiwYyObdEt0z-sTf5ZdTWbpaBOtq",
       },
-    ]
+      {
+        title: "The Pillars of Faith",
+        description: "Learn about the six articles that form the foundation of Islamic belief.",
+        category: "Beginner",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+      {
+        title: "Concept of Monotheism",
+        description: "A deep dive into Tawhid and its central role in Muslim life.",
+        category: "Intermediate",
+        type: "PDF Guide",
+        icon: BookOpen,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+    ],
   },
   {
-    id: "scripture-history",
-    title: "3. Scripture & History",
-    description: "Understanding the Quran and the life of the Prophet (pbuh).",
+    id: "scripture-sources",
+    title: "Scripture & Sources",
+    description: "Resources relating to the Quran and the Prophetic traditions.",
     resources: [
       {
         title: "Understanding the Quran",
-        description: "An introduction to the Holy Quran and its significance.",
+        description: "Introduction to the Holy Quran, its revelation, and its significance.",
         category: "Intermediate",
         type: "PDF Guide",
         icon: BookOpen,
@@ -90,67 +122,161 @@ const categories = [
       },
       {
         title: "The Life of Prophet Muhammad",
-        description: "A biographical overview and his essential teachings.",
+        description: "Biographical overview of the Prophet (pbuh) and his teachings.",
         category: "Beginner",
         type: "PDF Guide",
         icon: Users,
         driveUrl: "#",
         downloadUrl: "#",
       },
-    ]
+      {
+        title: "Introduction to Hadith",
+        description: "Understanding the sayings and actions of the Prophet.",
+        category: "Intermediate",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+      {
+        title: "Quranic Miracles",
+        description: "Exploring the linguistic and scientific signs within the text.",
+        category: "Beginner",
+        type: "PDF Guide",
+        icon: Globe,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+    ],
   },
   {
-    id: "daily-practice",
-    title: "4. Daily Practice: Living Islam",
-    description: "Practical guides on worship, prayer, and daily routines.",
+    id: "worship-practice",
+    title: "Worship & Practice",
+    description: "Practical guides on prayer, fasting, and daily rituals.",
     resources: [
       {
         title: "Islamic Worship & Practices",
-        description: "A guide to the five pillars and daily practices.",
+        description: "A guide to the five pillars and daily practices of a Muslim.",
         category: "Intermediate",
         type: "PDF Guide",
         icon: Heart,
         driveUrl: "#",
         downloadUrl: "#",
       },
-    ]
-  },
-  {
-    id: "common-questions",
-    title: "5. Common Questions & Clarifications",
-    description: "Addressing myths and providing clarity on complex topics.",
-    resources: [
       {
-        title: "Common Questions About Islam",
-        description: "Answers to frequently asked questions about Muslims and practices.",
+        title: "The Prayer (Salah) Guide",
+        description: "Step-by-step visual and text instructions for daily prayers.",
         category: "Beginner",
-        type: "FAQ Document",
-        icon: HelpCircle,
+        type: "PDF Guide",
+        icon: Video,
         driveUrl: "#",
         downloadUrl: "#",
       },
-    ]
+      {
+        title: "Purification (Wudu)",
+        description: "The essential guide to ritual washing before prayer.",
+        category: "Beginner",
+        type: "PDF Guide",
+        icon: Heart,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+      {
+        title: "Fasting in Ramadan",
+        description: "Comprehensive guide to the spiritual and physical aspects of fasting.",
+        category: "Beginner",
+        type: "PDF Guide",
+        icon: BookOpen,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+    ],
   },
   {
-    id: "external-growth",
-    title: "6. External Resources for Growth",
-    description: "Recommended platforms for further learning and community support.",
-    resources: [] // This will be populated by the externalResources array logic
-  }
-];
-
-const externalResources = [
-  {
-    title: "IslamReligion.com",
-    description: "Comprehensive website with articles and videos in multiple languages.",
-    url: "https://islamreligion.com",
-    icon: Globe,
+    id: "dawah-outreach",
+    title: "Dawah & Outreach",
+    description: "Tools for effectively communicating Islam to others.",
+    resources: [
+      {
+        title: "Articulating Islam: Q&A",
+        description: "Master the art of answering difficult questions asked by non-Muslims.",
+        category: "Beginner",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy",
+      },
+      {
+        title: "Effective Dialogue Tips",
+        description: "Frameworks for constructive interfaith and intrafaith conversations.",
+        category: "Intermediate",
+        type: "PDF Guide",
+        icon: Users,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+      {
+        title: "Outreach Best Practices",
+        description: "Ethics and methods for community engagement and dawah.",
+        category: "Intermediate",
+        type: "PDF Guide",
+        icon: Globe,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+      {
+        title: "Modern Dawah Challenges",
+        description: "Addressing contemporary misconceptions in a clear manner.",
+        category: "Advanced",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+    ],
   },
   {
-    title: "New Muslim Website",
-    description: "Dedicated resources and support for those who have recently embraced Islam.",
-    url: "https://newmuslim.net",
-    icon: Users,
+    id: "support-community",
+    title: "Support & Community",
+    description: "Resources for finding local support and building faith-based connections.",
+    resources: [
+      {
+        title: "Finding a Local Mentor",
+        description: "How to connect with teachers and support groups in your area.",
+        category: "Beginner",
+        type: "Directory",
+        icon: Users,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+      {
+        title: "Mental Health in Islam",
+        description: "A balanced perspective on spiritual and professional well-being.",
+        category: "Intermediate",
+        type: "PDF Guide",
+        icon: Heart,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+      {
+        title: "Community Guidelines",
+        description: "Fostering inclusive and respectful environments in Islamic centers.",
+        category: "Beginner",
+        type: "PDF Guide",
+        icon: Globe,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+      {
+        title: "Digital Community Safety",
+        description: "Navigating online Islamic spaces securely and productively.",
+        category: "Beginner",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
+    ],
   },
 ];
 
@@ -160,113 +286,119 @@ export default function DocsPage() {
       <Header />
 
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-b from-secondary/20 to-background py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6 text-center">
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-secondary">
-              <Star className="h-8 w-8 text-secondary-foreground" />
-            </div>
-            <h1 className="mt-6 text-4xl font-bold tracking-tight md:text-5xl">Islamic Learning Center</h1>
-            <p className="mt-4 text-lg text-muted-foreground md:text-xl max-w-2xl mx-auto">
-              A curated journey from foundational basics to advanced understanding, designed for seekers and new Muslims alike.
-            </p>
+        {/* Refactored Hero Section in a Card */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <Card className="bg-gradient-to-br from-secondary/30 via-background to-secondary/10 border-none shadow-xl">
+              <CardContent className="p-8 md:p-12 text-center">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-6">
+                  <BookOpen className="h-8 w-8 text-primary" />
+                </div>
+                <h1 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl mb-4">
+                  Islamic Resources & Documentation
+                </h1>
+                <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-10">
+                  Welcome to our central repository. These materials are curated to support 
+                  new Muslims and outreach efforts. Use the links below to jump to a specific area of study.
+                </p>
+                
+                {/* Navigation Bookmarks */}
+                <div className="flex flex-wrap justify-center gap-4">
+                  {categories.map((cat) => (
+                    <Button key={cat.id} variant="outline" size="sm" asChild className="rounded-full">
+                      <a href={`#${cat.id}`}>
+                        <Bookmark className="mr-2 h-3 w-3" />
+                        {cat.title}
+                      </a>
+                    </Button>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
-        {/* Dynamic Categorized Sections */}
-        {categories.map((category) => (
-          <section key={category.id} className="py-12 border-b last:border-0">
+        {/* Categorized Sections */}
+        {categories.map((section) => (
+          <section key={section.id} id={section.id} className="py-12 border-t first:border-none">
             <div className="container mx-auto px-4 md:px-6">
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold text-foreground md:text-3xl">{category.title}</h2>
-                <p className="text-muted-foreground mt-1">{category.description}</p>
+              <div className="mb-10">
+                <h2 className="text-3xl font-bold text-foreground mb-2">{section.title}</h2>
+                <p className="text-muted-foreground">{section.description}</p>
               </div>
 
-              {category.id === "external-growth" ? (
-                <div className="grid gap-6 md:grid-cols-2">
-                  {externalResources.map((resource, index) => (
-                    <Card key={index} className="border-2 transition-all hover:border-primary/30">
-                      <CardContent className="flex items-start gap-4 p-6">
-                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-                          <resource.icon className="h-6 w-6 text-primary" />
+              {/* Grid showing first row of 4 resources */}
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-10">
+                {section.resources.map((resource, index) => {
+                  const IconComponent = resource.icon;
+                  return (
+                    <Card key={index} className="group transition-all hover:shadow-lg flex flex-col">
+                      <CardHeader className="pb-4">
+                        <div className="flex items-start justify-between">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                            <IconComponent className="h-5 w-5 text-primary" />
+                          </div>
+                          <Badge variant={resource.category === "Beginner" ? "default" : "secondary"}>
+                            {resource.category}
+                          </Badge>
                         </div>
-                        <div className="flex-1 space-y-2">
-                          <h3 className="font-semibold text-foreground">{resource.title}</h3>
-                          <p className="text-sm text-muted-foreground">{resource.description}</p>
-                          <Button asChild variant="link" className="h-auto p-0">
-                            <a href={resource.url} target="_blank" rel="noopener noreferrer">
-                              Visit Website <ExternalLink className="ml-2 h-4 w-4" />
-                            </a>
-                          </Button>
+                        <CardTitle className="mt-4 text-lg line-clamp-1">{resource.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
+                        <p className="text-sm text-muted-foreground line-clamp-2">
+                          {resource.description}
+                        </p>
+                        <div className="space-y-3">
+                          <span className="text-xs font-medium text-muted-foreground block">
+                            {resource.type}
+                          </span>
+                          <div className="flex items-center gap-2">
+                            <Button asChild size="sm" variant="secondary" className="flex-1 opacity-90 transition-opacity group-hover:opacity-100">
+                              <a href={resource.driveUrl} target="_blank" rel="noopener noreferrer">
+                                <Eye className="mr-2 h-4 w-4" /> View
+                              </a>
+                            </Button>
+                            <Button asChild size="sm" variant="outline" className="flex-1 opacity-90 transition-opacity group-hover:opacity-100">
+                              <a href={resource.downloadUrl} target="_blank" rel="noopener noreferrer" download>
+                                <Download className="mr-2 h-4 w-4" /> Download
+                              </a>
+                            </Button>
+                          </div>
                         </div>
                       </CardContent>
                     </Card>
-                  ))}
-                </div>
-              ) : (
-                <>
-                  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {/* Showing only the first 6 items (2 rows) per section as requested */}
-                    {category.resources.slice(0, 6).map((resource, index) => (
-                      <Card key={index} className="group transition-all hover:shadow-lg">
-                        <CardHeader className="pb-4">
-                          <div className="flex items-start justify-between">
-                            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                              <resource.icon className="h-5 w-5 text-primary" />
-                            </div>
-                            <Badge variant={resource.category === "Beginner" ? "default" : "secondary"}>
-                              {resource.category}
-                            </Badge>
-                          </div>
-                          <CardTitle className="mt-4 text-lg">{resource.title}</CardTitle>
-                        </CardHeader>
-                        <CardContent className="space-y-4">
-                          <p className="text-sm text-muted-foreground h-10 line-clamp-2">{resource.description}</p>
-                          <div className="flex flex-col gap-3">
-                            <span className="text-xs text-muted-foreground font-medium">{resource.type}</span>
-                            <div className="flex items-center gap-2">
-                              <Button asChild size="sm" variant="secondary" className="flex-1">
-                                <a href={resource.driveUrl} target="_blank" rel="noopener noreferrer">
-                                  <Eye className="mr-2 h-4 w-4" /> View
-                                </a>
-                              </Button>
-                              <Button asChild size="sm" variant="outline" className="flex-1">
-                                <a href={resource.downloadUrl} target="_blank" rel="noopener noreferrer" download>
-                                  <Download className="mr-2 h-4 w-4" /> Download
-                                </a>
-                              </Button>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    ))}
-                  </div>
-                  {category.resources.length > 6 && (
-                    <div className="mt-8 text-center">
-                      <Button variant="ghost" className="text-primary hover:text-primary hover:bg-primary/5">
-                        See all resources in {category.title.split(":")[1]} <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </div>
-                  )}
-                </>
-              )}
+                  );
+                })}
+              </div>
+
+              {/* View All Button */}
+              <div className="flex justify-center">
+                <Button variant="ghost" className="text-primary hover:text-primary hover:bg-primary/5">
+                  View All {section.title} Resources
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
             </div>
           </section>
         ))}
 
-        {/* CTA */}
-        <section className="bg-secondary/10 py-16 md:py-24">
+        {/* CTA Section */}
+        <section className="bg-muted py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-2xl font-bold md:text-3xl">Have Questions About What You&apos;ve Read?</h2>
-              <p className="mt-4 text-muted-foreground">Our advisors are available to discuss any topics or answer any questions that arise from your reading.</p>
-              <div className="mt-8">
-                <Button asChild size="lg">
-                  <Link href="/chat">
-                    Talk to an Advisor <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
+              <h2 className="text-3xl font-bold text-foreground mb-4">
+                Have Questions About What You&apos;ve Read?
+              </h2>
+              <p className="text-muted-foreground mb-8">
+                Our advisors are available to discuss any topics or answer any
+                questions that arise from your reading.
+              </p>
+              <Button asChild size="lg">
+                <Link href="/chat">
+                  Talk to an Advisor
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
             </div>
           </div>
         </section>
