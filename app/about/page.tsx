@@ -217,7 +217,7 @@ export default function AboutPage() {
                       Location
                     </h3>
                     <p className="mt-2 text-sm text-muted-foreground">
-                      Kingdom of Bahrain
+                      Busaiteen, Kingdom of Bahrain
                     </p>
                   </CardContent>
                 </Card>
