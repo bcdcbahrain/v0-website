@@ -130,16 +130,6 @@ const categories = [
         downloadUrl: "#",
       },
       {
-        title: "The Life of Prophet Muhammad",
-        description: "Biographical overview of the Prophet (pbuh) and his teachings.",
-        category: "Beginner",
-        status: "Coming Soon",
-        type: "PDF Guide",
-        icon: Users,
-        driveUrl: "#",
-        downloadUrl: "#",
-      },
-      {
         title: "The Prophetic Presence: Shamail Tirmidhi",
         description: "A visual exploration of his noble presence and character, based on Tirmidhi's Shamail",
         category: "Intermediate",
