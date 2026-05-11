@@ -29,6 +29,7 @@ const categories = [
         title: "Introduction to Islam",
         description: "A comprehensive guide for those new to learning about fundamental beliefs.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: BookOpen,
         driveUrl: "#",
@@ -38,6 +39,7 @@ const categories = [
         title: "Common Questions About Islam",
         description: "Answers to frequently asked questions about Islam and Muslim practices.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "FAQ Document",
         icon: FileText,
         driveUrl: "#",
@@ -47,6 +49,7 @@ const categories = [
         title: "Understanding Divine Truth",
         description: "A starter guide on how to approach Islamic theology objectively.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: FileText,
         driveUrl: "#",
@@ -56,6 +59,7 @@ const categories = [
         title: "The Path of a New Muslim",
         description: "First steps and what to expect in your initial days of faith.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Users,
         driveUrl: "#",
@@ -72,6 +76,7 @@ const categories = [
         title: "The Architecture of Faith",
         description: "An objective framework for understanding claims of divine truth.",
         category: "Intermediate",
+        status: "New",
         type: "PDF Guide",
         icon: FileText,
         driveUrl: "https://drive.google.com/file/d/1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA/view?usp=sharing",
@@ -81,6 +86,7 @@ const categories = [
         title: "The 99 Beautiful Names",
         description: "Discover the profound meanings and spiritual depth behind Allah's names.",
         category: "Beginner",
+        status: "New",
         type: "MP4 Video",
         icon: Video,
         driveUrl: "https://drive.google.com/file/d/1gkqijiwYyObdEt0z-sTf5ZdTWbpaBOtq/view?usp=sharing",
@@ -90,6 +96,7 @@ const categories = [
         title: "The Pillars of Faith",
         description: "Learn about the six articles that form the foundation of Islamic belief.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: FileText,
         driveUrl: "#",
@@ -99,6 +106,7 @@ const categories = [
         title: "Concept of Monotheism",
         description: "A deep dive into Tawhid and its central role in Muslim life.",
         category: "Intermediate",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: BookOpen,
         driveUrl: "#",
@@ -115,6 +123,7 @@ const categories = [
         title: "Understanding the Quran",
         description: "Introduction to the Holy Quran, its revelation, and its significance.",
         category: "Intermediate",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: BookOpen,
         driveUrl: "#",
@@ -124,6 +133,7 @@ const categories = [
         title: "The Life of Prophet Muhammad",
         description: "Biographical overview of the Prophet (pbuh) and his teachings.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Users,
         driveUrl: "#",
@@ -133,6 +143,7 @@ const categories = [
         title: "Introduction to Hadith",
         description: "Understanding the sayings and actions of the Prophet.",
         category: "Intermediate",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: FileText,
         driveUrl: "#",
@@ -142,6 +153,7 @@ const categories = [
         title: "Quranic Miracles",
         description: "Exploring the linguistic and scientific signs within the text.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Globe,
         driveUrl: "#",
@@ -158,6 +170,7 @@ const categories = [
         title: "Islamic Worship & Practices",
         description: "A guide to the five pillars and daily practices of a Muslim.",
         category: "Intermediate",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Heart,
         driveUrl: "#",
@@ -167,6 +180,7 @@ const categories = [
         title: "The Prayer (Salah) Guide",
         description: "Step-by-step visual and text instructions for daily prayers.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Video,
         driveUrl: "#",
@@ -176,6 +190,7 @@ const categories = [
         title: "Purification (Wudu)",
         description: "The essential guide to ritual washing before prayer.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Heart,
         driveUrl: "#",
@@ -185,6 +200,7 @@ const categories = [
         title: "Fasting in Ramadan",
         description: "Comprehensive guide to the spiritual and physical aspects of fasting.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: BookOpen,
         driveUrl: "#",
@@ -201,6 +217,7 @@ const categories = [
         title: "Articulating Islam: Q&A",
         description: "Master the art of answering difficult questions asked by non-Muslims.",
         category: "Beginner",
+        status: "New",
         type: "PDF Guide",
         icon: FileText,
         driveUrl: "https://drive.google.com/file/d/1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy/view?usp=sharing",
@@ -210,6 +227,7 @@ const categories = [
         title: "Effective Dialogue Tips",
         description: "Frameworks for constructive interfaith and intrafaith conversations.",
         category: "Intermediate",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Users,
         driveUrl: "#",
@@ -219,6 +237,7 @@ const categories = [
         title: "Outreach Best Practices",
         description: "Ethics and methods for community engagement and dawah.",
         category: "Intermediate",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Globe,
         driveUrl: "#",
@@ -228,6 +247,7 @@ const categories = [
         title: "Modern Dawah Challenges",
         description: "Addressing contemporary misconceptions in a clear manner.",
         category: "Advanced",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: FileText,
         driveUrl: "#",
@@ -244,6 +264,7 @@ const categories = [
         title: "Finding a Local Mentor",
         description: "How to connect with teachers and support groups in your area.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "Directory",
         icon: Users,
         driveUrl: "#",
@@ -253,6 +274,7 @@ const categories = [
         title: "Mental Health in Islam",
         description: "A balanced perspective on spiritual and professional well-being.",
         category: "Intermediate",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Heart,
         driveUrl: "#",
@@ -262,6 +284,7 @@ const categories = [
         title: "Community Guidelines",
         description: "Fostering inclusive and respectful environments in Islamic centers.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Globe,
         driveUrl: "#",
@@ -271,6 +294,7 @@ const categories = [
         title: "Digital Community Safety",
         description: "Navigating online Islamic spaces securely and productively.",
         category: "Beginner",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: FileText,
         driveUrl: "#",
@@ -334,14 +358,31 @@ export default function DocsPage() {
                   return (
                     <Card key={index} className="group transition-all hover:shadow-lg flex flex-col">
                       <CardHeader className="pb-4">
-                        <div className="flex items-start justify-between">
+                        {/* Refactored Badge Code Begins */}
+                        <div className="flex items-start justify-between gap-2">
                           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                             <IconComponent className="h-5 w-5 text-primary" />
                           </div>
-                          <Badge variant={resource.category === "Beginner" ? "default" : "secondary"}>
-                            {resource.category}
-                          </Badge>
+                          <div className="flex flex-col items-end gap-1">
+                            <Badge variant={resource.category === "Beginner" ? "default" : "secondary"}>
+                              {resource.category}
+                            </Badge>
+                            {/* Status Badge Logic */}
+                            {resource.status && (
+                              <Badge 
+                                variant="outline" 
+                                className={`text-[10px] uppercase tracking-wider ${
+                                  resource.status === 'New' ? 'border-green-500 text-green-600' : 
+                                  resource.status === 'Coming Soon' ? 'border-amber-500 text-amber-600' : 
+                                  'border-blue-500 text-blue-600'
+                                }`}
+                              >
+                                {resource.status}
+                              </Badge>
+                            )}
+                          </div>
                         </div>
+                         {/* End of Refactored Badge Code */}
                         <CardTitle className="mt-4 text-lg">{resource.title}</CardTitle>
                       </CardHeader>
                       <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
