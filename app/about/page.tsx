@@ -231,10 +231,10 @@ export default function AboutPage() {
                       WhatsApp / Phone
                     </h3>
                     <a
-                      href="https://wa.me/966597581139"
+                      href="https://wa.me/917558845528"
                       className="mt-2 text-sm text-primary transition-colors hover:text-primary/80"
                     >
-                      +966597581139
+                      +917558845528
                     </a>
                   </CardContent>
                 </Card>
@@ -248,10 +248,10 @@ export default function AboutPage() {
                       Email
                     </h3>
                     <a
-                      href="mailto:bcdcbahrain@gmail.com"
+                      href="mailto:hamu1378@gmail.com"
                       className="mt-2 text-sm text-primary transition-colors hover:text-primary/80"
                     >
-                      bcdcbahrain@gmail.com
+                      hamu1378@gmail.com
                     </a>
                   </CardContent>
                 </Card>
