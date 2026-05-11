@@ -185,7 +185,7 @@ export default function HomePage() {
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/90 to-foreground/85" />
+            <div className="absolute inset-0 bg-gradient-to-r from-foreground/85 via-foreground/80 to-foreground/75" />
           </div>
 
           <div className="container relative mx-auto px-4 md:px-6">
