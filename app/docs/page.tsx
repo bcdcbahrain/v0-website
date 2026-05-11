@@ -342,7 +342,7 @@ export default function DocsPage() {
                             {resource.category}
                           </Badge>
                         </div>
-                        <CardTitle className="mt-4 text-lg line-clamp-1">{resource.title}</CardTitle>
+                        <CardTitle className="mt-4 text-lg">{resource.title}</CardTitle>
                       </CardHeader>
                       <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
                         <p className="text-sm text-muted-foreground line-clamp-2">
