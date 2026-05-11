@@ -140,8 +140,8 @@ export default function ChatPage() {
               Prefer to speak directly? Call our centre for a real-time conversation. 
             </p>
             <Button asChild variant="outline" className="w-full">
-              <a href="tel:+97339377497">
-                Call +973 3937 7497
+              <a href="tel:+966597581139">
+                Call +966597581139
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
