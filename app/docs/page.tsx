@@ -120,14 +120,14 @@ const categories = [
     description: "Resources relating to the Quran and the Prophetic traditions.",
     resources: [
       {
-        title: "Understanding the Quran",
-        description: "Introduction to the Holy Quran, its revelation, and its significance.",
+        title: "Investigating Quranic Authorship",
+        description: "A scholarly investigation into the origins of the Quran.",
         category: "Intermediate",
-        status: "Coming Soon",
+    	  status: "New",
         type: "PDF Guide",
-        icon: BookOpen,
-        driveUrl: "#",
-        downloadUrl: "#",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1D4epss8oXVLypdDC3ioRmXRVgoaxfHoK/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1D4epss8oXVLypdDC3ioRmXRVgoaxfHoK",
       },
       {
         title: "The Prophetic Presence: Shamail Tirmidhi",
