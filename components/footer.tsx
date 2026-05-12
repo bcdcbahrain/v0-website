@@ -71,7 +71,7 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider">
               Resources
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-4">
               <li>
                 <a
                   href="https://islamreligion.com"
