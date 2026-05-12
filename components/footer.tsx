@@ -113,7 +113,7 @@ export function Footer() {
                     className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
                   >
                     <Globe className="h-4 w-4" />
-                    IDTA.Com
+                    ID & TA.Com
                   </a>
               </li>
             </ul>
