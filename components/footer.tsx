@@ -100,22 +100,22 @@ export function Footer() {
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-wider">
-              Contact Us
+              Web Developer's Contact
             </h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm text-background/70">
-                <MapPin className="h-4 w-4 shrink-0" />
-                Kingdom of Bahrain
+                <Phone className="h-4 w-4 shrink-0" />
+                +917558845528
               </li>
               <li>
                 <a
-                  href="https://wa.me/966597581139"
+                  href="https://wa.me/917558845528"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
                 >
                   <MessageCircle className="h-4 w-4 shrink-0" />
-                  +966597581139
+                  +917558845528
                 </a>
               </li>
               <li>
