@@ -94,27 +94,27 @@ export function Footer() {
                   New Muslim eLearning  Site
                 </a>
               </li>
-              <li>
-                <a
-                  https://mopacademy.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
-                >
-                  <Globe className="h-4 w-4" />
-                  MOPA.Com
-                </a>
-              </li>
-              <li>
-                <a
-                  https://dakwah.my/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
-                >
-                  <Globe className="h-4 w-4" />
-                  IDTA.Com
-                </a>
+             <li>
+                  <a
+                    href="https://mopacademy.org/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
+                  >
+                    <Globe className="h-4 w-4" />
+                    MOPA.Com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://dakwah.my/"      
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
+                  >
+                    <Globe className="h-4 w-4" />
+                    IDTA.Com
+                  </a>
               </li>
             </ul>
           </div>
