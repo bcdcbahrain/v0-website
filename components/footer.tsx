@@ -105,8 +105,7 @@ export function Footer() {
                   MOPA.Com
                 </a>
               </li>
-            </ul>
-            <li>
+              <li>
                 <a
                   https://dakwah.my/"
                   target="_blank"
@@ -117,6 +116,7 @@ export function Footer() {
                   IDTA.Com
                 </a>
               </li>
+            </ul>
           </div>
 
           {/* Contact Info */}
