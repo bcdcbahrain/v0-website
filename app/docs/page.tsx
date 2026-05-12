@@ -121,7 +121,7 @@ const categories = [
     resources: [
       {
         title: "Investigating Quranic Authorship",
-        description: "A scholarly investigation into the origins of the Quran.",
+        description: "A scholarly investigation into the origins of the Quran by Tariq Najeebdeen.",
         category: "Intermediate",
     	  status: "New",
         type: "PDF Guide",
@@ -224,14 +224,14 @@ const categories = [
         downloadUrl: "https://drive.google.com/uc?export=download&id=1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy",
       },
       {
-        title: "Effective Dialogue Tips",
-        description: "Frameworks for constructive interfaith and intrafaith conversations.",
-        category: "Intermediate",
-        status: "Coming Soon",
-        type: "PDF Guide",
-        icon: Users,
-        driveUrl: "#",
-        downloadUrl: "#",
+        title: "Dawah Defense Protocols",
+        description: "The Devil's Deceptions & Distractions in Da'wah",
+        category: "Beginner",
+        status: "New",
+        type: "PPT-PDF",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1h7nSlwU3B9SnBWXibK8YCJ1ynS95d2Sg/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1h7nSlwU3B9SnBWXibK8YCJ1ynS95d2Sg",
       },
       {
         title: "Outreach Best Practices",
