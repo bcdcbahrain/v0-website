@@ -261,14 +261,14 @@ const categories = [
     description: "Resources for finding local support and building faith-based connections.",
     resources: [
       {
-        title: "Finding a Local Mentor",
-        description: "How to connect with teachers and support groups in your area.",
+        title: "The Illuminated Blueprint",
+        description: "Struicturing the Soul from Dawn to Mid-day",
         category: "Beginner",
-        status: "Coming Soon",
-        type: "Directory",
-        icon: Users,
-        driveUrl: "#",
-        downloadUrl: "#",
+        status: "New",
+        type: "PPT-PDF",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1pcUC8FA1inq6qyXNZbDYwdcJ21-xAfvt/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1pcUC8FA1inq6qyXNZbDYwdcJ21-xAfvt",
       },
       {
         title: "Why do bad things happen to me?",
