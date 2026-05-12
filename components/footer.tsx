@@ -100,7 +100,7 @@ export function Footer() {
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-wider">
-              Web Developer's Contact
+              Developer's Contact
             </h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm text-background/70">
