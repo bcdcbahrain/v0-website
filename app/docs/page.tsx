@@ -35,6 +35,16 @@ const categories = [
         driveUrl: "#",
         downloadUrl: "#",
       },
+		{
+        title: "Etiquettes of the Masjid",
+        description: "A guide on visiting and participating in community activities at the Mosque.",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Guide",
+        icon: Globe,
+        driveUrl: "#",
+        downloadUrl: "#",
+      },
       {
         title: "Masteering The Art of Dialogue",
         description: "A structural framework for answering theological questions",
@@ -305,12 +315,22 @@ const categories = [
 ];
 
 export default function DocsPage() {
+  // Track which sections are expanded
+  const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({});
+
+  const toggleSection = (sectionId: string) => {
+    setExpandedSections((prev) => ({
+      ...prev,
+      [sectionId]: !prev[sectionId],
+    }));
+  };
+
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
 
       <main className="flex-1">
-        {/* Refactored Hero Section in a Card */}
+        {/* Hero Section */}
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4 md:px-6">
             <Card className="bg-gradient-to-br from-secondary/30 via-background to-secondary/10 border-none shadow-xl">
@@ -322,11 +342,9 @@ export default function DocsPage() {
                   Islamic Resources & Documentation
                 </h1>
                 <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-10">
-                  Welcome to our central repository. These materials are curated to support 
-                  new Muslims and outreach efforts. Use the links below to jump to a specific area of study.
+                  Explore our curated library. Look for the status badges to find our latest additions and upcoming guides.
                 </p>
                 
-                {/* Navigation Bookmarks */}
                 <div className="flex flex-wrap justify-center gap-4">
                   {categories.map((cat) => (
                     <Button key={cat.id} variant="outline" size="sm" asChild className="rounded-full">
@@ -343,85 +361,97 @@ export default function DocsPage() {
         </section>
 
         {/* Categorized Sections */}
-        {categories.map((section) => (
-          <section key={section.id} id={section.id} className="py-12 border-t first:border-none">
-            <div className="container mx-auto px-4 md:px-6">
-              <div className="mb-10">
-                <h2 className="text-3xl font-bold text-foreground mb-2">{section.title}</h2>
-                <p className="text-muted-foreground">{section.description}</p>
-              </div>
+        {categories.map((section) => {
+          const isExpanded = expandedSections[section.id];
+          const displayedResources = isExpanded 
+            ? section.resources 
+            : section.resources.slice(0, 4); // Only show first 4 initially
 
-              {/* Grid showing first row of 4 resources */}
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-10">
-                {section.resources.map((resource, index) => {
-                  const IconComponent = resource.icon;
-                  return (
-                    <Card key={index} className="group transition-all hover:shadow-lg flex flex-col">
-                      <CardHeader className="pb-4">
-                        {/* Refactored Badge Code Begins */}
-                        <div className="flex items-start justify-between gap-2">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                            <IconComponent className="h-5 w-5 text-primary" />
-                          </div>
-                          <div className="flex flex-col items-end gap-1">
-                            <Badge variant={resource.category === "Beginner" ? "default" : "secondary"}>
-                              {resource.category}
-                            </Badge>
-                            {/* Status Badge Logic */}
-                            {resource.status && (
-                              <Badge 
-                                variant="outline" 
-                                className={`text-[10px] uppercase tracking-wider ${
-                                  resource.status === 'New' ? 'border-green-500 text-green-600' : 
-                                  resource.status === 'Coming Soon' ? 'border-amber-500 text-amber-600' : 
-                                  'border-blue-500 text-blue-600'
-                                }`}
-                              >
-                                {resource.status}
+          return (
+            <section key={section.id} id={section.id} className="py-12 border-t first:border-none">
+              <div className="container mx-auto px-4 md:px-6">
+                <div className="mb-10">
+                  <h2 className="text-3xl font-bold text-foreground mb-2">{section.title}</h2>
+                  <p className="text-muted-foreground">{section.description}</p>
+                </div>
+
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-10">
+                  {displayedResources.map((resource, index) => {
+                    const IconComponent = resource.icon;
+                    return (
+                      <Card key={index} className="group transition-all hover:shadow-lg flex flex-col">
+                        <CardHeader className="pb-4">
+                          <div className="flex items-start justify-between gap-2">
+                            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                              <IconComponent className="h-5 w-5 text-primary" />
+                            </div>
+                            <div className="flex flex-col items-end gap-1">
+                              <Badge variant={resource.category === "Beginner" ? "default" : "secondary"}>
+                                {resource.category}
                               </Badge>
-                            )}
+                              {resource.status && (
+                                <Badge variant="outline" className="text-[10px] uppercase border-blue-500 text-blue-600">
+                                  {resource.status}
+                                </Badge>
+                              )}
+                            </div>
                           </div>
-                        </div>
-                         {/* End of Refactored Badge Code */}
-                        <CardTitle className="mt-4 text-lg">{resource.title}</CardTitle>
-                      </CardHeader>
-                      <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
-                        <p className="text-sm text-muted-foreground line">
-                          {resource.description}
-                        </p>
-                        <div className="space-y-3">
-                          <span className="text-xs font-medium text-muted-foreground block">
-                            {resource.type}
-                          </span>
-                          <div className="flex items-center gap-2">
-                            <Button asChild size="sm" variant="secondary" className="flex-1 opacity-90 transition-opacity group-hover:opacity-100">
-                              <a href={resource.driveUrl} target="_blank" rel="noopener noreferrer">
-                                <Eye className="mr-2 h-4 w-4" /> View
-                              </a>
-                            </Button>
-                            <Button asChild size="sm" variant="outline" className="flex-1 opacity-90 transition-opacity group-hover:opacity-100">
-                              <a href={resource.downloadUrl} target="_blank" rel="noopener noreferrer" download>
-                                <Download className="mr-2 h-4 w-4" /> Download
-                              </a>
-                            </Button>
+                          {/* Note: line-clamp removed to ensure full title displays */}
+                          <CardTitle className="mt-4 text-lg">{resource.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
+                          <p className="text-sm text-muted-foreground line-clamp-2">
+                            {resource.description}
+                          </p>
+                          <div className="space-y-3">
+                            <span className="text-xs font-medium text-muted-foreground block">
+                              {resource.type}
+                            </span>
+                            <div className="flex items-center gap-2">
+                              <Button asChild size="sm" variant="secondary" className="flex-1 opacity-90 transition-opacity group-hover:opacity-100">
+                                <a href={resource.driveUrl} target="_blank" rel="noopener noreferrer">
+                                  <Eye className="mr-2 h-4 w-4" /> View
+                                </a>
+                              </Button>
+                              <Button asChild size="sm" variant="outline" className="flex-1 opacity-90 transition-opacity group-hover:opacity-100">
+                                <a href={resource.downloadUrl} target="_blank" rel="noopener noreferrer" download>
+                                  <Download className="mr-2 h-4 w-4" /> Download
+                                </a>
+                              </Button>
+                            </div>
                           </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  );
-                })}
-              </div>
+                        </CardContent>
+                      </Card>
+                    );
+                  })}
+                </div>
 
-              {/* View All Button */}
-              <div className="flex justify-center">
-                <Button variant="ghost" className="text-primary hover:text-primary hover:bg-primary/5">
-                  View All {section.title} Resources
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                {/* View All Button Logic */}
+                {section.resources.length > 4 && (
+                  <div className="flex justify-center">
+                    <Button 
+                      onClick={() => toggleSection(section.id)}
+                      variant="ghost" 
+                      className="text-primary hover:text-primary hover:bg-primary/5"
+                    >
+                      {isExpanded ? (
+                        <>
+                          Show Less
+                          <ChevronUp className="ml-2 h-4 w-4" />
+                        </>
+                      ) : (
+                        <>
+                          View All {section.title} Resources
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </>
+                      )}
+                    </Button>
+                  </div>
+                )}
               </div>
-            </div>
-          </section>
-        ))}
+            </section>
+          );
+        })}
 
         {/* CTA Section */}
         <section className="bg-muted py-16 md:py-24">
