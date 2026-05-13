@@ -44,7 +44,7 @@ const categories = [
         title: "Etiquettes of the Masjid",
         description: "A guide on visiting and participating in community activities at the Mosque.",
         category: "Beginner",
-        status: "New",
+        status: "Coming Soon",
         type: "PDF Guide",
         icon: Globe,
         driveUrl: "#",
