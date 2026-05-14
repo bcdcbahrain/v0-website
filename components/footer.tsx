@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Globe, MessageCircle, Mail } from "lucide-react";
+import { MapPin, Phone, Github, Globe, MessageCircle, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -126,11 +126,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm text-background/70">
-                <Phone className="h-4 w-4 shrink-0" />
-                +917558845528
-              </li>
-              <li>
-                <a
+               <a
                   href="https://wa.me/917558845528"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -138,6 +134,17 @@ export function Footer() {
                 >
                   <MessageCircle className="h-4 w-4 shrink-0" />
                   +917558845528
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/iciso"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
+                >
+                  <Github className="h-4 w-4 shrink-0" />
+                 GitHub
                 </a>
               </li>
               <li>
