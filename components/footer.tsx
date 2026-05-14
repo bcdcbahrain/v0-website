@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Github, Globe, MessageCircle, Mail } from "lucide-react";
+import { MapPin, Phone, Github, Globe, Linkedin, MessageCircle, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -145,6 +145,17 @@ export function Footer() {
                 >
                   <Github className="h-4 w-4 shrink-0" />
                  GitHub
+                </a>
+              </li>
+               <li>
+                <a
+                  href="https://www.linkedin.com/in/mohamed-essa-rafique-96b64b15/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
+                >
+                  <Linkedin className="h-4 w-4 shrink-0" />
+                 LinkedIn
                 </a>
               </li>
               <li>
