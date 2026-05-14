@@ -231,10 +231,10 @@ export default function AboutPage() {
                       WhatsApp / Phone
                     </h3>
                     <a
-                      href="https://wa.me/917558845528"
+                      href="https://wa.me/966597581139"
                       className="mt-2 text-sm text-primary transition-colors hover:text-primary/80"
                     >
-                      +917558845528
+                      +966597581139
                     </a>
                   </CardContent>
                 </Card>
