@@ -34,7 +34,7 @@ const categories = [
         title: "Introduction to Islam",
         description: "A comprehensive guide for those new to learning about fundamental beliefs.",
         category: "Beginner",
-        status: "Coming Soon",
+        status: "New",
         type: "PDF Guide",
         icon: BookOpen,
         driveUrl: "https://drive.google.com/file/d/1dUd6L_94qIkW6GLV6X5BFjEa3yebStfs/view?usp=sharing",
