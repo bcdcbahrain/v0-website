@@ -217,7 +217,7 @@ export default function AboutPage() {
                       Location
                     </h3>
                     <p className="mt-2 text-sm text-muted-foreground">
-                      Busaiteen, Kingdom of Bahrain
+                      Flat 1, Building 3650, Road 2664, Block 226, Busaiteen, Kingdom of Bahrain
                     </p>
                   </CardContent>
                 </Card>
