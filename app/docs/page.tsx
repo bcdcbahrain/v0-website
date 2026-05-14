@@ -405,7 +405,7 @@ export default function DocsPage() {
                           <CardTitle className="mt-4 text-lg">{resource.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
-                          <p className="text-sm text-muted-foreground line-clamp-2">
+                          <p className="text-sm text-muted-foreground line">
                             {resource.description}
                           </p>
                           <div className="space-y-3">
