@@ -37,8 +37,8 @@ const categories = [
         status: "Coming Soon",
         type: "PDF Guide",
         icon: BookOpen,
-        driveUrl: "#",
-        downloadUrl: "#",
+        driveUrl: "https://drive.google.com/file/d/1dUd6L_94qIkW6GLV6X5BFjEa3yebStfs/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1dUd6L_94qIkW6GLV6X5BFjEa3yebStfs",
       },
 		{
 		title: "Global Polygyny Frameworks",
