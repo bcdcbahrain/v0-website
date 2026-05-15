@@ -181,15 +181,15 @@ const categories = [
     title: "Worship & Practice",
     description: "Practical guides on prayer, fasting, and daily rituals.",
     resources: [
-      {
+     {
         title: "Islamic Worship & Practices",
         description: "A guide to the five pillars and daily practices of a Muslim.",
         category: "Intermediate",
-        status: "Coming Soon",
+        status: "New",
         type: "PDF Guide",
         icon: Heart,
-        driveUrl: "#",
-        downloadUrl: "#",
+        driveUrl: "https://drive.google.com/file/d/10iKdurEJa2ccxuJ1pHF7QYtPnkU0YHCC/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=10iKdurEJa2ccxuJ1pHF7QYtPnkU0YHCC",
       },
       {
         title: "The Sacred Rhythm",
