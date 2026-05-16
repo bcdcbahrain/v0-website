@@ -107,15 +107,15 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1gkqijiwYyObdEt0z-sTf5ZdTWbpaBOtq/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1gkqijiwYyObdEt0z-sTf5ZdTWbpaBOtq",
       },
-      {
-        title: "The Pillars of Faith",
-        description: "Learn about the six articles that form the foundation of Islamic belief.",
+     {
+        title: "The Foundation of the Heart",
+        description: "Understanding the Six Pillars of Faith or Iman in Islam",
         category: "Beginner",
-        status: "Coming Soon",
+        status: "New",
         type: "PDF Guide",
-        icon: FileText,
-        driveUrl: "#",
-        downloadUrl: "#",
+        icon: Heart,
+        driveUrl: "https://drive.google.com/file/d/1vjU_UgJqQh3wC815GhWRDBO1J_L_p8y-/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1vjU_UgJqQh3wC815GhWRDBO1J_L_p8y-",
       },
       {
         title: "Tahawi's Creed of Monotheism",
