@@ -63,11 +63,11 @@ const categories = [
       },
 	  {
         title: "The Islamic Marriage Blueprint",
-        description: "The Path of Devotion: A Complete Guide to Salah",
+        description: "A guide to Islamic Marriage for new Muslims",
         category: "Beginner",
         status: "New",
         type: "PDF Guide",
-        icon: Users,
+        icon: Heart,
         driveUrl: "https://drive.google.com/file/d/1JhX0G6sTJ-nmQEOpEW5PJcsztAuswbmM/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1JhX0G6sTJ-nmQEOpEW5PJcsztAuswbmM",
       },
