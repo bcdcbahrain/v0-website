@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
+  AlarmClockCheck,
   BookOpen,
   BookOpenCheck,
   BrickWall,
@@ -184,7 +185,7 @@ const categories = [
 	    category: "Beginner",
 		status: "New",
 	    type: "PPT-PDF",
-	    icon: FileText,
+	    icon: AlarmClockCheck,
 	    driveUrl: "https://drive.google.com/file/d/18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz/view?usp=sharing",
 	    downloadUrl: "https://drive.google.com/uc?export=download&id=18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz",
       },
