@@ -22,6 +22,7 @@ import {
   ArrowRight,
   Video,
   Bookmark,
+  NotebookPen,
   ChevronDown,
   ChevronUp,
 } from "lucide-react";
@@ -153,7 +154,7 @@ const categories = [
         category: "Intermediate",
     	status: "New",
         type: "PDF Guide",
-        icon: FileText,
+        icon: NotebookPen,
         driveUrl: "https://drive.google.com/file/d/1D4epss8oXVLypdDC3ioRmXRVgoaxfHoK/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1D4epss8oXVLypdDC3ioRmXRVgoaxfHoK",
       },
