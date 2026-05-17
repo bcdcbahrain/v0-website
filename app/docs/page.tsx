@@ -61,6 +61,16 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1Xjf5u_kUThQy5Wi1DjuOjISY-OrmZthf/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1Xjf5u_kUThQy5Wi1DjuOjISY-OrmZthf",
       },
+	  {
+        title: "The Islamic Marriage Blueprint",
+        description: "The Path of Devotion: A Complete Guide to Salah",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Guide",
+        icon: Users,
+        driveUrl: "https://drive.google.com/file/d/1JhX0G6sTJ-nmQEOpEW5PJcsztAuswbmM/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1JhX0G6sTJ-nmQEOpEW5PJcsztAuswbmM",
+      },
       {
         title: "Understanding Divine Truth",
         description: "A starter guide on how to approach Islamic theology objectively.",
