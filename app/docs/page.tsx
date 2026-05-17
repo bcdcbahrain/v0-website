@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   BookOpen,
+  BrickWall,
   Droplets,
   Download,
   Globe,
@@ -104,7 +105,7 @@ const categories = [
         category: "Intermediate",
         status: "New",
         type: "PDF Guide",
-        icon: FileText,
+        icon: BrickWall,
         driveUrl: "https://drive.google.com/file/d/1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA",
       },
