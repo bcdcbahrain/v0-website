@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   BookOpen,
+  Droplets,
   Download,
   Globe,
   FileText,
@@ -202,14 +203,14 @@ const categories = [
         downloadUrl: "https://drive.google.com/uc?export=download&id=1hBD3JS8l9QPI1mivDTRzmZD9SL6F8UQM",
       },
       {
-        title: "Purification (Wudu)",
-        description: "The essential guide to ritual washing before prayer.",
+        title: "Wudu Essentials",
+        description: "An essential guide to ritual purification before prayer",
         category: "Beginner",
-        status: "Coming Soon",
+        status: "New",
         type: "PDF Guide",
-        icon: Heart,
-        driveUrl: "#",
-        downloadUrl: "#",
+        icon: Droplets,
+        driveUrl: "https://drive.google.com/file/d/1W-ZwkvbCnzQgLigfm4qNXuwWneFQlx4d/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1W-ZwkvbCnzQgLigfm4qNXuwWneFQlx4d",
       },
       {
         title: "Post Ramadan Depression Syndrome",
