@@ -152,6 +152,16 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1WcnGqDPkkFkHIMgN006jMmFkW3BCCxo3/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1WcnGqDPkkFkHIMgN006jMmFkW3BCCxo3",
       },
+		{
+        title: "The Architecture of Orthodoxy",
+        description: "The Creed of Imam al-Tahawi",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: BookOpenCheck,
+        driveUrl: "https://drive.google.com/file/d/1nlbA_m1B1vAZfHq9NI3x0OscuKNlnRAf/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1nlbA_m1B1vAZfHq9NI3x0OscuKNlnRAf",
+      },
     ],
   },
   {
