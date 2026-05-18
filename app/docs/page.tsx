@@ -142,6 +142,16 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1Q5I-6gW5nY5Y9y-HKLms8T-cSc3FgLA_/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1Q5I-6gW5nY5Y9y-HKLms8T-cSc3FgLA_",
       },
+		{
+        title: "The Theological Synthesis",
+        description: "A Comprehensive Synthesis of the Creed of Imam al-Tahawi",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: Users,
+        driveUrl: "https://drive.google.com/file/d/1WcnGqDPkkFkHIMgN006jMmFkW3BCCxo3/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1WcnGqDPkkFkHIMgN006jMmFkW3BCCxo3",
+      },
     ],
   },
   {
