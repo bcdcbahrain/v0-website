@@ -354,8 +354,8 @@ const categories = [
     ],
   },
 	 {
-    id: "islamic-psychology",
-    title: "Islamic Psychology",
+    id: "dawah-psychology",
+    title: "Dawah Psychology",
     description: "Deepen your understanding of Islamic Psychology based on authentic Sunnah.",
     resources: [
       {
