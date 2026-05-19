@@ -356,7 +356,7 @@ const categories = [
 	 {
     id: "dawah-psychology",
     title: "Dawah Psychology",
-    description: "Deepen your understanding of Islamic Psychology based on authentic Sunnah.",
+    description: "Deepen your understanding of Dawah Psychology based on authentic Sunnah.",
     resources: [
       {
         title: "The Prophetic Pause",
