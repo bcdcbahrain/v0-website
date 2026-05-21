@@ -410,6 +410,53 @@ const categories = [
       },
     ],
   },
+	{
+    id: "books-mags",
+    title: "Dawah Books & Magazines",
+    description: "Dawah books and magazines not available online anymore!",
+    resources: [
+      {
+        title: "Dawah Monthly: May 2014",
+        description: "Salvation-Blood or Mercy: Yusuf Estes explains",
+        category: "Intermediate",
+    	status: "New",
+        type: "PDF Guide",
+        icon: Notebook,
+        driveUrl: "https://drive.google.com/file/d/1CIpv0wrm8v-9elVfLdpQczDJHP6mzaIR/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1CIpv0wrm8v-9elVfLdpQczDJHP6mzaIR",
+      },
+      {
+        title: "The Prophetic Presence: Shamail Tirmidhi",
+        description: "A visual exploration of his noble presence and character, based on Tirmidhi's Shamail",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1COzaRvKPBHSZZs_LoGchR6hXWFgnrgY7/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1COzaRvKPBHSZZs_LoGchR6hXWFgnrgY7",
+      },
+      {
+        title: "Be Like The Bee",
+        description: "Exploring Bio-mimicry, natural mechanics and spiritual reflections in Surah An-Nahl",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: Users,
+        driveUrl: "https://drive.google.com/file/d/1itMSAhT5RwNqGo2Tr7NmuoqopxHWbhoP/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1itMSAhT5RwNqGo2Tr7NmuoqopxHWbhoP",
+      },
+      {
+        title: "The Prophetic Rhythm",
+	    description: "A Day in the Life of the Noble Prophet who changed the world",
+	    category: "Beginner",
+		status: "New",
+	    type: "PPT-PDF",
+	    icon: AlarmClockCheck,
+	    driveUrl: "https://drive.google.com/file/d/18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz/view?usp=sharing",
+	    downloadUrl: "https://drive.google.com/uc?export=download&id=18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz",
+      },
+    ],
+  },	
 ];
 
 export default function DocsPage() {
