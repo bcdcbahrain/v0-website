@@ -428,7 +428,7 @@ const categories = [
       },
       {
         title: "Dawah Monthly: Aug 2013",
-        description: "A visual exploration of his noble presence and character, based on Tirmidhi's Shamail",
+        description: "The Muslim Jesus(PBUH)",
         category: "Intermediate",
         status: "New",
         type: "PDF Magazine",
