@@ -24,6 +24,7 @@ import {
   ArrowRight,
   Video,
   Bookmark,
+  Notebook,
   NotebookPen,
   ChevronDown,
   ChevronUp,
