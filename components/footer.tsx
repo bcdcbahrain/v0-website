@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Github, Globe, Linkedin, MessageCircle, Mail } from "lucide-react";
+import { MapPin, Github, Globe, Doc, MessageCircle, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -125,15 +125,15 @@ export function Footer() {
               Developer's Contact
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-sm text-background/70">
-               <a
-                  href="https://wa.me/917558845528"
+              <li>
+                <a
+                  href="https://cvemrafi.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
                 >
-                  <MessageCircle className="h-4 w-4 shrink-0" />
-                  +917558845528
+                  <Doc className="h-4 w-4 shrink-0" />
+                 CV
                 </a>
               </li>
               <li>
@@ -147,18 +147,18 @@ export function Footer() {
                  GitHub
                 </a>
               </li>
-               <li>
-                <a
-                  href="https://www.linkedin.com/in/mohamed-essa-rafique-96b64b15/"
+              <li className="flex items-center gap-2 text-sm text-background/70">
+               <a
+                  href="https://wa.me/917558845528"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
                 >
-                  <Linkedin className="h-4 w-4 shrink-0" />
-                 LinkedIn
+                  <MessageCircle className="h-4 w-4 shrink-0" />
+                  +917558845528
                 </a>
               </li>
-              <li>
+               <li>
                 <a
                   href="mailto:bcdcbahrain@gmail.com"
                   className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
