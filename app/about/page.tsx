@@ -230,12 +230,12 @@ export default function AboutPage() {
                     <h3 className="mt-4 font-semibold text-card-foreground">
                       WhatsApp / Phone
                     </h3>
-                    <a
-                      href="https://wa.me/917558845528"
-                      className="mt-2 text-sm text-primary transition-colors hover:text-primary/80"
-                    >
-                      +917558845528
-                    </a>
+                         <Button asChild size="lg">
+                  <Link href="https://wa.me/917558845528">
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    Send a Message
+                      </Link>
+                      </Button>
                   </CardContent>
                 </Card>
 
