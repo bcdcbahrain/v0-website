@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Github, Globe, Doc, MessageCircle, Mail } from "lucide-react";
+import { MapPin, Github, Globe, FileText, MessageCircle, Mail } from "lucide-react"
  
 export function Footer() {
   return (
@@ -132,7 +132,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-background/70 transition-colors hover:text-secondary"
                 >
-                  <Doc className="h-4 w-4 shrink-0" />
+                  <FileText className="h-4 w-4 shrink-0" />
                  CV
                 </a>
               </li>
