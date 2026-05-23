@@ -246,12 +246,12 @@ export default function AboutPage() {
                     <h3 className="mt-4 font-semibold text-card-foreground">
                       Email
                     </h3>
-                    <a
-                      href="mailto:hamu1378@gmail.com"
-                      className="mt-2 text-sm text-primary transition-colors hover:text-primary/80"
-                    >
-                      hamu1378@gmail.com
-                    </a>
+                       <Button asChild size="lg" className="mt-6">
+                              <Link href="mailto:hamu1378@gmail.com">
+                                <Mail className="mr-2 h-5 w-5" />
+                                Send a Mail
+                              </Link>
+                            </Button>
                   </CardContent>
                 </Card>
               </div>
