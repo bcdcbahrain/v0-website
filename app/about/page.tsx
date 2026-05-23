@@ -221,27 +221,23 @@ export default function AboutPage() {
                     </p>
                   </CardContent>
                 </Card>
-
-                <Card className="border-0 bg-card shadow-lg">
-                  <CardContent className="flex flex-col items-center p-6 text-center">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
-                      <Phone className="h-6 w-6 text-green-600" />
-                    </div>
-                    <h3 className="mt-4 font-semibold text-card-foreground">
-                      WhatsApp / Phone
-                    </h3>
-                     <p className="mt-4 text-muted-foreground">
-                           <br>       
-                         </p>
-                         <Button asChild size="lg">
-                  <Link href="https://wa.me/917558845528">
-                    <MessageCircle className="mr-2 h-5 w-5" />
-                    Send a Message
-                      </Link>
-                      </Button>
-                  </CardContent>
-                </Card>
-
+                      <Card className="border-0 bg-card shadow-lg">
+                          <CardContent className="flex flex-col items-center p-6 text-center">
+                            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+                              <Phone className="h-6 w-6 text-green-600" />
+                            </div>
+                            
+                            <h3 className="mt-4 font-semibold text-card-foreground">
+                              WhatsApp / Phone
+                            </h3>
+                            <Button asChild size="lg" className="mt-6">
+                              <Link href="https://wa.me/917558845528">
+                                <MessageCircle className="mr-2 h-5 w-5" />
+                                Send a Message
+                              </Link>
+                            </Button>
+                          </CardContent>
+                        </Card>
                 <Card className="border-0 bg-card shadow-lg">
                   <CardContent className="flex flex-col items-center p-6 text-center">
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary/20">
