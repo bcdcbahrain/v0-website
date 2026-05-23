@@ -230,6 +230,9 @@ export default function AboutPage() {
                     <h3 className="mt-4 font-semibold text-card-foreground">
                       WhatsApp / Phone
                     </h3>
+                     <p className="mt-4 text-muted-foreground">
+                           <br>       
+                         </p>
                          <Button asChild size="lg">
                   <Link href="https://wa.me/917558845528">
                     <MessageCircle className="mr-2 h-5 w-5" />
