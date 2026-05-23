@@ -21,7 +21,7 @@ const values = [
     icon: Target,
     title: "Our Mission",
     description:
-      "To convey the gift of Islam and be a cause for Hidaya (guidance) for thousands of non-Muslims globally through meaningful dialogue and authentic teachings.",
+      "To convey the gift of true faith and be a cause for spiritually guiding hundreds of people globally through meaningful dialogue and authentic teachings.",
   },
   {
     icon: Globe,
@@ -75,18 +75,18 @@ export default function AboutPage() {
                 <div className="space-y-4 text-muted-foreground">
                   <p className="text-pretty leading-relaxed">
                     At Busaiteen Chat Dialogue Centre, based in the Kingdom of
-                    Bahrain, we are dedicated to fulfilling the mission of our
-                    beloved Prophet Muhammad (peace be upon him).
+                    Bahrain, we are dedicated to fulfilling the mission of conveying the 
+                    truth of our common humanity attaining Peace.
                   </p>
                   <p className="text-pretty leading-relaxed">
                     Through our online platform, we provide a safe and welcoming
                     space for seekers of truth to engage in meaningful dialogue
-                    about Islam. Our centre serves as a beacon of guidance for those
-                    searching for authentic knowledge about the Islamic faith.
+                    to seek and learn about attaining Peace. Our centre serves as a beacon of guidance for those
+                    searching for authentic knowledge about the joys of Salvation.
                   </p>
                   <p className="text-pretty leading-relaxed">
                     We believe that every person deserves access to the true
-                    teachings of Islam, presented with compassion, patience, and
+                    teachings of our common Creator, presented with compassion, patience, and
                     understanding. Our team of dedicated advisors works tirelessly
                     to answer questions, address concerns, and guide individuals on
                     their spiritual journey.
@@ -217,7 +217,7 @@ export default function AboutPage() {
                       Location
                     </h3>
                     <p className="mt-2 text-sm text-muted-foreground">
-                      Flat 1, Building 3650, Road 2664, Block 226, Busaiteen, Kingdom of Bahrain
+                      Busaiteen, Kingdom of Bahrain    {/* Removed Physical address as advised by Mr. Thahir */}
                     </p>
                   </CardContent>
                 </Card>
@@ -231,10 +231,10 @@ export default function AboutPage() {
                       WhatsApp / Phone
                     </h3>
                     <a
-                      href="https://wa.me/966597581139"
+                      href="https://wa.me/917558845528"
                       className="mt-2 text-sm text-primary transition-colors hover:text-primary/80"
                     >
-                      +966597581139
+                      +917558845528
                     </a>
                   </CardContent>
                 </Card>
