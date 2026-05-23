@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Github, Globe, Doc, MessageCircle, Mail } from "lucide-react";
-
+ 
 export function Footer() {
   return (
     <footer className="border-t border-border bg-foreground text-background">
