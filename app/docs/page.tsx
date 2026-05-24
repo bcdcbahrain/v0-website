@@ -412,6 +412,23 @@ const categories = [
     ],
   },
 	{
+    id: "books",
+    title: "Dawah Books",
+    description: "Dawah Books that are most read by Chat Advisors and Field Daees",
+    resources: [
+ 	{
+        title: "A.-Foundations DTC Notes-1-4",
+        description: "A starter DTC guide on how to maximize your online learning for Dawah.",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "#",
+        downloadUrl: "#",
+       },
+    ],
+  },
+	{
     id: "mags",
     title: "Dawah Magazines",
     description: "Dawah magazines not available online anymore!",
@@ -477,7 +494,7 @@ const categories = [
         downloadUrl: "https://drive.google.com/uc?export=download&id=18WvJJ_C48DzWivIILrVqnhAKbHIBGTqo",
       },
 		{
-        title: "Dawah Monthly: Jul 2022",
+        title: "Dawah Monthly: May 2022",
         description: "10 Things You Might Not Know about Jesus in Islam",
         category: "Intermediate",
         status: "New",
