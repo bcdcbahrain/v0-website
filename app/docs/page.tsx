@@ -412,9 +412,9 @@ const categories = [
     ],
   },
 	{
-    id: "books-mags",
-    title: "Dawah Books & Magazines",
-    description: "Dawah books and magazines not available online anymore!",
+    id: "mags",
+    title: "Dawah Magazines",
+    description: "Dawah magazines not available online anymore!",
     resources: [
       {
         title: "Dawah Monthly: Aug 2013",
@@ -475,6 +475,16 @@ const categories = [
         icon: Users,
         driveUrl: "https://drive.google.com/file/d/18WvJJ_C48DzWivIILrVqnhAKbHIBGTqo/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=18WvJJ_C48DzWivIILrVqnhAKbHIBGTqo",
+      },
+		{
+        title: "Dawah Monthly: Jul 2022",
+        description: "10 Things You Might Not Know about Jesus in Islam",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Magazine",
+        icon: Users,
+        driveUrl: "https://drive.google.com/file/d/18hFkfp6qLR2cqR3MeeeZkV1123PhjRZU/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=18hFkfp6qLR2cqR3MeeeZkV1123PhjRZU",
       },
     ],
   },	
