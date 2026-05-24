@@ -231,7 +231,7 @@ export default function AboutPage() {
                               WhatsApp / Phone
                             </h3>
                             <Button asChild size="lg" className="mt-6">
-                              <Link href="https://wa.me/917558845528">
+                              <Link href="https://wa.me/966597581139">
                                 <MessageCircle className="mr-2 h-5 w-5" />
                                 Send a Message
                               </Link>
