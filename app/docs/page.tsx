@@ -191,6 +191,16 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1COzaRvKPBHSZZs_LoGchR6hXWFgnrgY7/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1COzaRvKPBHSZZs_LoGchR6hXWFgnrgY7",
       },
+		{
+        title: "The Illuminated Anatomy",
+        description: "Battle and Balance between Heart, Mind, Soul, and Body.",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: Heart,
+        driveUrl: "https://drive.google.com/file/d/1RvR2-MknUQafvOJ3Tpiqhi9wtekTgime/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1RvR2-MknUQafvOJ3Tpiqhi9wtekTgime",
+      },
       {
         title: "Be Like The Bee",
         description: "Exploring Bio-mimicry, natural mechanics and spiritual reflections in Surah An-Nahl",
