@@ -198,8 +198,8 @@ const categories = [
         status: "New",
         type: "PDF Guide",
         icon: Heart,
-        driveUrl: "https://drive.google.com/file/d/1RvR2-MknUQafvOJ3Tpiqhi9wtekTgime/view?usp=sharing",
-        downloadUrl: "https://drive.google.com/uc?export=download&id=1RvR2-MknUQafvOJ3Tpiqhi9wtekTgime",
+        driveUrl: "#",
+        downloadUrl: "#",
       },
       {
         title: "Be Like The Bee",
