@@ -192,14 +192,14 @@ const categories = [
         downloadUrl: "https://drive.google.com/uc?export=download&id=1COzaRvKPBHSZZs_LoGchR6hXWFgnrgY7",
       },
 		{
-        title: "The Illuminated Anatomy",
+        title: "The Anatomy of Light",
         description: "Battle and Balance between Heart, Mind, Soul, and Body.",
         category: "Intermediate",
         status: "New",
         type: "PDF Guide",
         icon: Heart,
-        driveUrl: "#",
-        downloadUrl: "#",
+        driveUrl: "https://drive.google.com/file/d/17rFpy0jzKWKv_bvG3IqjpcKU3bmZEyuQ/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=17rFpy0jzKWKv_bvG3IqjpcKU3bmZEyuQ",
       },
       {
         title: "Be Like The Bee",
