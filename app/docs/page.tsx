@@ -276,6 +276,16 @@ const categories = [
     title: "Dawah & Outreach",
     description: "Tools for effectively communicating Islam to others.",
     resources: [
+	   {
+    title: "Prophetic Strategic Defense",
+    description: "Defensive Foundations of the Nine Prophetic Battles",
+    category: "Intermediate",
+	  status: "New",
+    type: "PDF Guide",
+    icon: FileText,
+    driveUrl: "https://drive.google.com/file/d/1bdwJ4Vn4_FVv9jjuaDW4e8i2gxJpMjbQ/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1bdwJ4Vn4_FVv9jjuaDW4e8i2gxJpMjbQ",
+      },
       {
     title: "Strategic Steps in Da'wah",
     description: "A practical Framework for Inviting to Islam",
