@@ -172,7 +172,17 @@ const categories = [
     title: "Scripture & Sources",
     description: "Resources relating to the Quran and the Prophetic traditions.",
     resources: [
-      {
+      	  {
+	    title: "Reclaiming the Forgotten Sunnah",
+	    description: "Reclaiming the greatest service to Humanity",
+	    category: "Beginner",
+		  status: "New",
+	    type: "PDF Guide",
+	    icon: FileText,
+	    driveUrl: "https://drive.google.com/file/d/1TV-oGKp8cDb_-DMgMkav9ozmy_ASsITM/view?usp=sharing",
+	    downloadUrl: "https://drive.google.com/uc?export=download&id=1TV-oGKp8cDb_-DMgMkav9ozmy_ASsITM",
+      },
+		{
         title: "Investigating Quranic Authorship",
         description: "A scholarly investigation into the origins of the Quran by Tariq Najeebdeen.",
         category: "Intermediate",
