@@ -383,6 +383,16 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1pcUC8FA1inq6qyXNZbDYwdcJ21-xAfvt/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1pcUC8FA1inq6qyXNZbDYwdcJ21-xAfvt",
       },
+		  {
+    title: "The Balanced Big Picture",
+    description: "The Balanced Big Picture: Foundations for Dawah",
+    category: "Beginner",
+	  status: "New",
+    type: "PDF Guide",
+    icon: FileText,
+    driveUrl: "https://drive.google.com/file/d/1Ap4UnUkVdbhm2sQW1IWmqx-sVX5h_BSz/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1Ap4UnUkVdbhm2sQW1IWmqx-sVX5h_BSz",
+      },
       {
         title: "Why do bad things happen to me?",
         description: "An Islamic framework for transitioning from despair to divine purpose",
