@@ -232,16 +232,6 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1itMSAhT5RwNqGo2Tr7NmuoqopxHWbhoP/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1itMSAhT5RwNqGo2Tr7NmuoqopxHWbhoP",
       },
-      {
-        title: "The Prophetic Rhythm",
-	    description: "A Day in the Life of the Noble Prophet who changed the world",
-	    category: "Beginner",
-		status: "New",
-	    type: "PPT-PDF",
-	    icon: AlarmClockCheck,
-	    driveUrl: "https://drive.google.com/file/d/18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz/view?usp=sharing",
-	    downloadUrl: "https://drive.google.com/uc?export=download&id=18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz",
-      },
     ],
   },
   {
@@ -260,7 +250,6 @@ const categories = [
         downloadUrl: "https://drive.google.com/uc?export=download&id=10iKdurEJa2ccxuJ1pHF7QYtPnkU0YHCC",
       },
       {
-        title: "The Sacred Rhythm",
         description: "The Path of Devotion: A Complete Guide to Salah",
         category: "Beginner",
         status: "New",
@@ -278,6 +267,16 @@ const categories = [
         icon: Droplets,
         driveUrl: "https://drive.google.com/file/d/1W-ZwkvbCnzQgLigfm4qNXuwWneFQlx4d/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1W-ZwkvbCnzQgLigfm4qNXuwWneFQlx4d",
+      },
+		 {
+        title: "The Prophetic Rhythm",
+	    description: "A Day in the Life of the Noble Prophet who changed the world",
+	    category: "Beginner",
+		status: "New",
+	    type: "PPT-PDF",
+	    icon: AlarmClockCheck,
+	    driveUrl: "https://drive.google.com/file/d/18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz/view?usp=sharing",
+	    downloadUrl: "https://drive.google.com/uc?export=download&id=18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz",
       },
       {
         title: "Post Ramadan Depression Syndrome",
@@ -325,6 +324,16 @@ const categories = [
         icon: FileText,
         driveUrl: "https://drive.google.com/file/d/1h7nSlwU3B9SnBWXibK8YCJ1ynS95d2Sg/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1h7nSlwU3B9SnBWXibK8YCJ1ynS95d2Sg",
+      },
+		 {
+    title: "Islamic Foundations of Coexistence",
+    description: "Peace & Coexistence: Islamic Foundations for a Global Society",
+    category: "Beginner",
+	  status: "New",
+    type: "PDF Guide",
+    icon: FileText,
+    driveUrl: "https://drive.google.com/file/d/1o0I7BsSDtuJ_w1dA_m-tprs9xN3oYMqU/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1o0I7BsSDtuJ_w1dA_m-tprs9xN3oYMqU",
       },
        {
         title: "Beyond The Sword",
