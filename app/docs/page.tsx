@@ -250,7 +250,8 @@ const categories = [
         downloadUrl: "https://drive.google.com/uc?export=download&id=10iKdurEJa2ccxuJ1pHF7QYtPnkU0YHCC",
       },
       {
-        description: "The Path of Devotion: A Complete Guide to Salah",
+        title: "Salah: The Sacred Rhythm",
+		description: "The Path of Devotion: A Complete Guide to Salah",
         category: "Beginner",
         status: "New",
         type: "PDF Guide",
@@ -268,7 +269,7 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1W-ZwkvbCnzQgLigfm4qNXuwWneFQlx4d/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1W-ZwkvbCnzQgLigfm4qNXuwWneFQlx4d",
       },
-		 {
+		{
         title: "The Prophetic Rhythm",
 	    description: "A Day in the Life of the Noble Prophet who changed the world",
 	    category: "Beginner",
