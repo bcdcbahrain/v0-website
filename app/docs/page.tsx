@@ -460,6 +460,16 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1qT2gONdTEHFynG9FM2lDnoSlb_fRbULT/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1qT2gONdTEHFynG9FM2lDnoSlb_fRbULT",
       },
+	{
+        title: "Najwa - What Destroys Dawah",
+	    description: "A Diagnostic Frame work for Organizational Health",
+	    category: "Beginner",
+		status: "New",
+	    type: "PPT-PDF",
+	    icon: AlarmClockCheck,
+	    driveUrl: "https://drive.google.com/file/d/1aurCR3x1AnbQtM2n55IsW6Odkd8TXZjY/view?usp=sharing",
+	    downloadUrl: "https://drive.google.com/uc?export=download&id=1aurCR3x1AnbQtM2n55IsW6Odkd8TXZjY",
+    	  },
       {
         title: "The Firawnic Archetype",
         description: "Understanding the Negative Archetypes and the Lessons they teach us.",
