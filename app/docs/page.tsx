@@ -183,6 +183,16 @@ const categories = [
 	    downloadUrl: "https://drive.google.com/uc?export=download&id=1TV-oGKp8cDb_-DMgMkav9ozmy_ASsITM",
       },
 		{
+    title: "Muhammad A Mercy to Humanity",
+    description: "Get a glimpse of the Noble Prophet of Islam",
+    category: "Beginner",
+	  status: "New",
+    type: "PDF Guide",
+    icon: FileText,
+    driveUrl: "https://drive.google.com/file/d/1F_bCLKs62fPdhxw875sJVUsx-UV-Em50/view?usp=sharing",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1F_bCLKs62fPdhxw875sJVUsx-UV-Em50",
+      },
+		{
         title: "Investigating Quranic Authorship",
         description: "A scholarly investigation into the origins of the Quran by Tariq Najeebdeen.",
         category: "Intermediate",
