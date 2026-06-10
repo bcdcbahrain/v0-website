@@ -504,6 +504,23 @@ const categories = [
     ],
   },
 	{
+    id: "science",
+    title: "The Science of Signs",
+    description: "Signs of our Creator and its Science",
+    resources: [
+ 			{
+            title: "Human Genessis",
+	    description: "Miracles in the Creation of MAN",
+	    category: "Beginner",
+		status: "New",
+	    type: "PPT-PDF",
+	    icon: AlarmClockCheck,
+	    driveUrl: "https://drive.google.com/file/d/15TV0iOVdkKu-1Dja43WVTt2jaRgdp4c8/view?usp=sharing",
+	    downloadUrl: "https://drive.google.com/uc?export=download&id=15TV0iOVdkKu-1Dja43WVTt2jaRgdp4c8",
+    	  },
+    ],
+  },
+	{
     id: "books",
     title: "Dawah Books",
     description: "Dawah Books that are most read by Chat Advisors and Field Daees",
