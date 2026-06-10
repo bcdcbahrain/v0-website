@@ -233,16 +233,6 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/17rFpy0jzKWKv_bvG3IqjpcKU3bmZEyuQ/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=17rFpy0jzKWKv_bvG3IqjpcKU3bmZEyuQ",
       },
-      {
-        title: "Be Like The Bee",
-        description: "Exploring Bio-mimicry, natural mechanics and spiritual reflections in Surah An-Nahl",
-        category: "Intermediate",
-        status: "New",
-        type: "PDF Guide",
-        icon: Users,
-        driveUrl: "https://drive.google.com/file/d/1itMSAhT5RwNqGo2Tr7NmuoqopxHWbhoP/view?usp=sharing",
-        downloadUrl: "https://drive.google.com/uc?export=download&id=1itMSAhT5RwNqGo2Tr7NmuoqopxHWbhoP",
-      },
     ],
   },
   {
@@ -518,6 +508,16 @@ const categories = [
 	    driveUrl: "https://drive.google.com/file/d/15TV0iOVdkKu-1Dja43WVTt2jaRgdp4c8/view?usp=sharing",
 	    downloadUrl: "https://drive.google.com/uc?export=download&id=15TV0iOVdkKu-1Dja43WVTt2jaRgdp4c8",
     	  },
+		 {
+        title: "Be Like The Bee",
+        description: "Exploring Bio-mimicry, natural mechanics and spiritual reflections in Surah An-Nahl",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: Users,
+        driveUrl: "https://drive.google.com/file/d/1itMSAhT5RwNqGo2Tr7NmuoqopxHWbhoP/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1itMSAhT5RwNqGo2Tr7NmuoqopxHWbhoP",
+      },
     ],
   },
 	{
