@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -32,7 +32,6 @@ import {
   ChevronUp,
 } from "lucide-react";
 
-
 const categories = [
   {
     id: "getting-started",
@@ -49,8 +48,8 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1dUd6L_94qIkW6GLV6X5BFjEa3yebStfs/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1dUd6L_94qIkW6GLV6X5BFjEa3yebStfs",
       },
-		{
-		title: "Global Polygyny Frameworks",
+      {
+        title: "Global Polygyny Frameworks",
         description: "Understanding the regulations, rights and precedents of polygyny in Islam and global history",
         category: "Beginner",
         status: "New",
@@ -58,7 +57,7 @@ const categories = [
         icon: FileText,
         driveUrl: "https://drive.google.com/file/d/1uNf7g2OHJUw9OLlpDh0jCrtwSXgdFQo0/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1uNf7g2OHJUw9OLlpDh0jCrtwSXgdFQo0",
-	  },
+      },
       {
         title: "Masteering The Art of Dialogue",
         description: "A structural framework for answering theological questions",
@@ -69,7 +68,7 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1Xjf5u_kUThQy5Wi1DjuOjISY-OrmZthf/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1Xjf5u_kUThQy5Wi1DjuOjISY-OrmZthf",
       },
-	  {
+      {
         title: "The Islamic Marriage Blueprint",
         description: "A guide to Islamic Marriage for new Muslims",
         category: "Beginner",
@@ -116,7 +115,7 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1psU_pQCZeRys-vR3Y-zwV24nWJ49gppA",
       },
-		{
+      {
         title: "The Worldly Mirage",
         description: "Deceptions of the Worldly Life.",
         category: "Beginner",
@@ -136,7 +135,7 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1gkqijiwYyObdEt0z-sTf5ZdTWbpaBOtq/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1gkqijiwYyObdEt0z-sTf5ZdTWbpaBOtq",
       },
-     {
+      {
         title: "The Foundation of the Heart",
         description: "Understanding the Six Pillars of Faith or Iman in Islam",
         category: "Beginner",
@@ -156,7 +155,7 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1Q5I-6gW5nY5Y9y-HKLms8T-cSc3FgLA_/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1Q5I-6gW5nY5Y9y-HKLms8T-cSc3FgLA_",
       },
-		{
+      {
         title: "The Theological Synthesis",
         description: "A Comprehensive Synthesis of the Creed of Imam al-Tahawi",
         category: "Intermediate",
@@ -166,7 +165,7 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1WcnGqDPkkFkHIMgN006jMmFkW3BCCxo3/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1WcnGqDPkkFkHIMgN006jMmFkW3BCCxo3",
       },
-		{
+      {
         title: "The Architecture of Orthodoxy",
         description: "The Creed of Imam al-Tahawi",
         category: "Intermediate",
@@ -183,31 +182,31 @@ const categories = [
     title: "Scripture & Sources",
     description: "Resources relating to the Quran and the Prophetic traditions.",
     resources: [
-      	  {
-	    title: "Reclaiming the Forgotten Sunnah",
-	    description: "Reclaiming the greatest service to Humanity",
-	    category: "Beginner",
-		  status: "New",
-	    type: "PDF Guide",
-	    icon: FileText,
-	    driveUrl: "https://drive.google.com/file/d/1TV-oGKp8cDb_-DMgMkav9ozmy_ASsITM/view?usp=sharing",
-	    downloadUrl: "https://drive.google.com/uc?export=download&id=1TV-oGKp8cDb_-DMgMkav9ozmy_ASsITM",
+      {
+        title: "Reclaiming the Forgotten Sunnah",
+        description: "Reclaiming the greatest service to Humanity",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1TV-oGKp8cDb_-DMgMkav9ozmy_ASsITM/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1TV-oGKp8cDb_-DMgMkav9ozmy_ASsITM",
       },
-		{
-    title: "Muhammad A Mercy to Humanity",
-    description: "Get a glimpse of the Noble Prophet of Islam",
-    category: "Beginner",
-	  status: "New",
-    type: "PDF Guide",
-    icon: FileText,
-    driveUrl: "https://drive.google.com/file/d/1F_bCLKs62fPdhxw875sJVUsx-UV-Em50/view?usp=sharing",
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1F_bCLKs62fPdhxw875sJVUsx-UV-Em50",
+      {
+        title: "Muhammad A Mercy to Humanity",
+        description: "Get a glimpse of the Noble Prophet of Islam",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1F_bCLKs62fPdhxw875sJVUsx-UV-Em50/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1F_bCLKs62fPdhxw875sJVUsx-UV-Em50",
       },
-		{
+      {
         title: "Investigating Quranic Authorship",
         description: "A scholarly investigation into the origins of the Quran by Tariq Najeebdeen.",
         category: "Intermediate",
-    	status: "New",
+        status: "New",
         type: "PDF Guide",
         icon: NotebookPen,
         driveUrl: "https://drive.google.com/file/d/1D4epss8oXVLypdDC3ioRmXRVgoaxfHoK/view?usp=sharing",
@@ -223,7 +222,7 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1COzaRvKPBHSZZs_LoGchR6hXWFgnrgY7/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1COzaRvKPBHSZZs_LoGchR6hXWFgnrgY7",
       },
-		{
+      {
         title: "The Anatomy of Light",
         description: "Battle and Balance between Heart, Mind, Soul, and Body.",
         category: "Intermediate",
@@ -240,7 +239,7 @@ const categories = [
     title: "Worship & Practice",
     description: "Practical guides on prayer, fasting, and daily rituals.",
     resources: [
-     {
+      {
         title: "Islamic Worship & Practices",
         description: "A guide to the five pillars and daily practices of a Muslim.",
         category: "Intermediate",
@@ -252,7 +251,7 @@ const categories = [
       },
       {
         title: "Salah: The Sacred Rhythm",
-		description: "The Path of Devotion: A Complete Guide to Salah",
+        description: "The Path of Devotion: A Complete Guide to Salah",
         category: "Beginner",
         status: "New",
         type: "PDF Guide",
@@ -270,25 +269,82 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1W-ZwkvbCnzQgLigfm4qNXuwWneFQlx4d/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1W-ZwkvbCnzQgLigfm4qNXuwWneFQlx4d",
       },
-		{
+      {
         title: "The Prophetic Rhythm",
-	    description: "A Day in the Life of the Noble Prophet who changed the world",
-	    category: "Beginner",
-		status: "New",
-	    type: "PPT-PDF",
-	    icon: AlarmClockCheck,
-	    driveUrl: "https://drive.google.com/file/d/18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz/view?usp=sharing",
-	    downloadUrl: "https://drive.google.com/uc?export=download&id=18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz",
+        description: "A Day in the Life of the Noble Prophet who changed the world",
+        category: "Beginner",
+        status: "New",
+        type: "PPT-PDF",
+        icon: AlarmClockCheck,
+        driveUrl: "https://drive.google.com/file/d/18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=18NNx5H2_gY9ikIZwQV4_HNLUIiori9lz",
       },
       {
         title: "Post Ramadan Depression Syndrome",
-	    description: "Maintaining the spiritual momentum beyond Ramadan through Istiqama",
-	    category: "Beginner",
-		status: "New",
-	    type: "PPT-PDF",
-	    icon: FileText,
-	    driveUrl: "https://drive.google.com/file/d/1RAnWBe_kzWhPjI81IHYoRAAQL_O46thf/view?usp=sharing",
-	    downloadUrl: "https://drive.google.com/uc?export=download&id=1RAnWBe_kzWhPjI81IHYoRAAQL_O46thf",
+        description: "Maintaining the spiritual momentum beyond Ramadan through Istiqama",
+        category: "Beginner",
+        status: "New",
+        type: "PPT-PDF",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1RAnWBe_kzWhPjI81IHYoRAAQL_O46thf/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1RAnWBe_kzWhPjI81IHYoRAAQL_O46thf",
+      },
+    ],
+  },
+  {
+    id: "comparative-religion",
+    title: "Comparative Religion",
+    description: "Objective studies and comparative analysis on world religions and traditions.",
+    resources: [
+      {
+        title: "Hinduism Architecture & Beliefs",
+        description: "An exploratory overview of Hindu architectural symbolism and core traditions.",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: Globe,
+        driveUrl: "/docs/hinduism-architecture.pdf",
+        downloadUrl: "/docs/hinduism-architecture.pdf",
+      },
+      {
+        title: "Judaism: Part I",
+        description: "An introductory overview of Jewish history, scripture, and core theological beliefs.",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Guide",
+        icon: BookOpen,
+        driveUrl: "/docs/judaism-i.pdf",
+        downloadUrl: "/docs/judaism-i.pdf",
+      },
+      {
+        title: "Judaism: Part II",
+        description: "A detailed continuation exploring theological developments and modern practices within Judaism.",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "/docs/judaism-ii.pdf",
+        downloadUrl: "/docs/judaism-ii.pdf",
+      },
+      {
+        title: "Protestantism: Part I",
+        description: "An examination of the Reformation, core doctrines, and foundational history of Protestantism.",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Guide",
+        icon: BookOpen,
+        driveUrl: "/docs/protestantism-i.pdf",
+        downloadUrl: "/docs/protestantism-i.pdf",
+      },
+      {
+        title: "Protestantism: Part II",
+        description: "A deeper look into modern denominations, theological variations, and Christian practices.",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "/docs/protestantism-ii.pdf",
+        downloadUrl: "/docs/protestantism-ii.pdf",
       },
     ],
   },
@@ -297,25 +353,25 @@ const categories = [
     title: "Dawah & Outreach",
     description: "Tools for effectively communicating Islam to others.",
     resources: [
-	   {
-    title: "Prophetic Strategic Defense",
-    description: "Defensive Foundations of the Nine Prophetic Battles",
-    category: "Intermediate",
-	  status: "New",
-    type: "PDF Guide",
-    icon: FileText,
-    driveUrl: "https://drive.google.com/file/d/1bdwJ4Vn4_FVv9jjuaDW4e8i2gxJpMjbQ/view?usp=sharing",
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1bdwJ4Vn4_FVv9jjuaDW4e8i2gxJpMjbQ",
+      {
+        title: "Prophetic Strategic Defense",
+        description: "Defensive Foundations of the Nine Prophetic Battles",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1bdwJ4Vn4_FVv9jjuaDW4e8i2gxJpMjbQ/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1bdwJ4Vn4_FVv9jjuaDW4e8i2gxJpMjbQ",
       },
       {
-    title: "Strategic Steps in Da'wah",
-    description: "A practical Framework for Inviting to Islam",
-    category: "Intermediate",
-	  status: "New",
-    type: "PDF Guide",
-    icon: FileText,
-    driveUrl: "https://drive.google.com/file/d/1e9esJ2HHzNNEcS3OBQ3v5yznV5Tylqf1/view?usp=sharing",
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1e9esJ2HHzNNEcS3OBQ3v5yznV5Tylqf1",
+        title: "Strategic Steps in Da'wah",
+        description: "A practical Framework for Inviting to Islam",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1e9esJ2HHzNNEcS3OBQ3v5yznV5Tylqf1/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1e9esJ2HHzNNEcS3OBQ3v5yznV5Tylqf1",
       },
       {
         title: "Dawah Defense Protocols",
@@ -327,17 +383,17 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1h7nSlwU3B9SnBWXibK8YCJ1ynS95d2Sg/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1h7nSlwU3B9SnBWXibK8YCJ1ynS95d2Sg",
       },
-		 {
-    title: "Islamic Foundations of Coexistence",
-    description: "Peace & Coexistence: Islamic Foundations for a Global Society",
-    category: "Beginner",
-	  status: "New",
-    type: "PDF Guide",
-    icon: FileText,
-    driveUrl: "https://drive.google.com/file/d/1o0I7BsSDtuJ_w1dA_m-tprs9xN3oYMqU/view?usp=sharing",
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1o0I7BsSDtuJ_w1dA_m-tprs9xN3oYMqU",
+      {
+        title: "Islamic Foundations of Coexistence",
+        description: "Peace & Coexistence: Islamic Foundations for a Global Society",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1o0I7BsSDtuJ_w1dA_m-tprs9xN3oYMqU/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1o0I7BsSDtuJ_w1dA_m-tprs9xN3oYMqU",
       },
-       {
+      {
         title: "Beyond The Sword",
         description: "Why did Prophet Muhammad (SA) Fight Battles.",
         category: "Intermediate",
@@ -346,7 +402,7 @@ const categories = [
         icon: Sword,
         driveUrl: "https://drive.google.com/file/d/1mjbTxSMJgOoklbIdQ4005UbD5YPIDQkx/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1mjbTxSMJgOoklbIdQ4005UbD5YPIDQkx",
-       },
+      },
       {
         title: "Articulating Islam: Q&A",
         description: "Master the art of answering difficult questions asked by non-Muslims.",
@@ -357,15 +413,15 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1fl6pxkL1TKueDoqnjsZNyGFl6znsInxy",
       },
-		 {
+      {
         title: "The Universal Thread",
-	    description: "Understanding the rationale history and shared heritage of modesty",
-	    category: "Beginner",
-		status: "New",
-	    type: "PPT-PDF",
-	    icon: FileText,
-	    driveUrl: "https://drive.google.com/file/d/1rHxAHLExJlSXGKS35RKairka_gO2lZ8B/view?usp=sharing",
-	    downloadUrl: "https://drive.google.com/uc?export=download&id=1rHxAHLExJlSXGKS35RKairka_gO2lZ8B",
+        description: "Understanding the rationale history and shared heritage of modesty",
+        category: "Beginner",
+        status: "New",
+        type: "PPT-PDF",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1rHxAHLExJlSXGKS35RKairka_gO2lZ8B/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1rHxAHLExJlSXGKS35RKairka_gO2lZ8B",
       },
     ],
   },
@@ -384,15 +440,15 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1pcUC8FA1inq6qyXNZbDYwdcJ21-xAfvt/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1pcUC8FA1inq6qyXNZbDYwdcJ21-xAfvt",
       },
-		  {
-    title: "The Balanced Big Picture",
-    description: "The Balanced Big Picture: Foundations for Dawah",
-    category: "Beginner",
-	  status: "New",
-    type: "PDF Guide",
-    icon: FileText,
-    driveUrl: "https://drive.google.com/file/d/1Ap4UnUkVdbhm2sQW1IWmqx-sVX5h_BSz/view?usp=sharing",
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1Ap4UnUkVdbhm2sQW1IWmqx-sVX5h_BSz",
+      {
+        title: "The Balanced Big Picture",
+        description: "The Balanced Big Picture: Foundations for Dawah",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "https://drive.google.com/file/d/1Ap4UnUkVdbhm2sQW1IWmqx-sVX5h_BSz/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1Ap4UnUkVdbhm2sQW1IWmqx-sVX5h_BSz",
       },
       {
         title: "Why do bad things happen to me?",
@@ -426,7 +482,7 @@ const categories = [
       },
     ],
   },
-	 {
+  {
     id: "dawah-psychology",
     title: "Dawah Psychology",
     description: "Deepen your understanding of Dawah Psychology based on authentic Sunnah.",
@@ -445,13 +501,13 @@ const categories = [
         title: "Dawah Psychology Field Guide",
         description: "Navigating Setbacks, Sustaining Sincerity, and Following the Prophetic Way",
         category: "Beginner",
-         status: "New",
+        status: "New",
         type: "PDF from PPT",
         icon: Eye,
         driveUrl: "https://drive.google.com/file/d/1U-Z7gUv69QsgYrSXnv3u8H4ZbuyflAta/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1U-Z7gUv69QsgYrSXnv3u8H4ZbuyflAta",
       },
-     {
+      {
         title: "Mastering Online Dawah",
         description: "Learn COPE technique to deal with 11 types of online encounters ",
         category: "Beginner",
@@ -461,16 +517,16 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1qT2gONdTEHFynG9FM2lDnoSlb_fRbULT/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1qT2gONdTEHFynG9FM2lDnoSlb_fRbULT",
       },
-	{
+      {
         title: "Najwa - What Destroys Dawah",
-	    description: "A Diagnostic Frame work for Organizational Health",
-	    category: "Beginner",
-		status: "New",
-	    type: "PPT-PDF",
-	    icon: AlarmClockCheck,
-	    driveUrl: "https://drive.google.com/file/d/1aurCR3x1AnbQtM2n55IsW6Odkd8TXZjY/view?usp=sharing",
-	    downloadUrl: "https://drive.google.com/uc?export=download&id=1aurCR3x1AnbQtM2n55IsW6Odkd8TXZjY",
-    	  },
+        description: "A Diagnostic Frame work for Organizational Health",
+        category: "Beginner",
+        status: "New",
+        type: "PPT-PDF",
+        icon: AlarmClockCheck,
+        driveUrl: "https://drive.google.com/file/d/1aurCR3x1AnbQtM2n55IsW6Odkd8TXZjY/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1aurCR3x1AnbQtM2n55IsW6Odkd8TXZjY",
+      },
       {
         title: "The Firawnic Archetype",
         description: "Understanding the Negative Archetypes and the Lessons they teach us.",
@@ -481,7 +537,7 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1E7LyEoeSKRKRWzviT7tZ2LoLmhy0LCec/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1E7LyEoeSKRKRWzviT7tZ2LoLmhy0LCec",
       },
-		{
+      {
         title: "Secure Your Own Oxygen Mask",
         description: "A Comprehensive Guide to Self Care before others and its Islamic Rationale",
         category: "Beginner",
@@ -493,22 +549,22 @@ const categories = [
       },
     ],
   },
-	{
+  {
     id: "science",
     title: "The Science of Signs",
     description: "Signs of our Creator and its Science",
     resources: [
- 			{
-            title: "Human Genessis",
-	    description: "Miracles in the Creation of MAN",
-	    category: "Beginner",
-		status: "New",
-	    type: "PPT-PDF",
-	    icon: AlarmClockCheck,
-	    driveUrl: "https://drive.google.com/file/d/15TV0iOVdkKu-1Dja43WVTt2jaRgdp4c8/view?usp=sharing",
-	    downloadUrl: "https://drive.google.com/uc?export=download&id=15TV0iOVdkKu-1Dja43WVTt2jaRgdp4c8",
-    	  },
-		 {
+      {
+        title: "Human Genessis",
+        description: "Miracles in the Creation of MAN",
+        category: "Beginner",
+        status: "New",
+        type: "PPT-PDF",
+        icon: AlarmClockCheck,
+        driveUrl: "https://drive.google.com/file/d/15TV0iOVdkKu-1Dja43WVTt2jaRgdp4c8/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=15TV0iOVdkKu-1Dja43WVTt2jaRgdp4c8",
+      },
+      {
         title: "Be Like The Bee",
         description: "Exploring Bio-mimicry, natural mechanics and spiritual reflections in Surah An-Nahl",
         category: "Intermediate",
@@ -520,12 +576,12 @@ const categories = [
       },
     ],
   },
-	{
+  {
     id: "books",
     title: "Dawah Books",
     description: "Dawah Books that are most read by Chat Advisors and Field Daees",
     resources: [
- 	{
+      {
         title: "A. Foundations-DTC Notes:1-4",
         description: "A starter DTC guide on how to maximize your online learning for Dawah.",
         category: "Beginner",
@@ -534,8 +590,8 @@ const categories = [
         icon: BookOpen,
         driveUrl: "https://drive.google.com/file/d/1-wD8flyBD4lWtO5ezEf6oaJTTwqf4YfX/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1-wD8flyBD4lWtO5ezEf6oaJTTwqf4YfX",
-       },
-		{
+      },
+      {
         title: "B. Fiqh-of-Dawah-DTC Notes: 5-8",
         description: "Introducing the Call, the Caller, and the Called.",
         category: "Intermediate",
@@ -544,8 +600,8 @@ const categories = [
         icon: BookOpen,
         driveUrl: "https://drive.google.com/file/d/1s2GvQwIvMogrhFOjSmTDX_HdFxoiuVqn/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1s2GvQwIvMogrhFOjSmTDX_HdFxoiuVqn",
-       },
-		{
+      },
+      {
         title: "C. G.O.R.A.P-DTC Notes: 9-21",
         description: "The G.O.R.A.P Approach Before We GO!",
         category: "Intermediate",
@@ -554,8 +610,8 @@ const categories = [
         icon: BookOpen,
         driveUrl: "https://drive.google.com/file/d/1ttsPIKc01CijVVmfdDruRDBbs4rwNcO4/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1ttsPIKc01CijVVmfdDruRDBbs4rwNcO4",
-       },
-		{
+      },
+      {
         title: "D. Acknowledgement DTC Notes: 22-25",
         description: "Shahadah Developing and Supporting-Call To Action.",
         category: "Intermediate",
@@ -564,10 +620,10 @@ const categories = [
         icon: BookOpen,
         driveUrl: "https://drive.google.com/file/d/1KW62smiccphhAZr0ZIsI8gb1LtiehxsR/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1KW62smiccphhAZr0ZIsI8gb1LtiehxsR",
-       },
+      },
     ],
   },
-	{
+  {
     id: "mags",
     title: "Dawah Magazines",
     description: "Dawah magazines not available online anymore!",
@@ -582,15 +638,15 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1PfjLvTFpVY2apLRQJ0Zkc8CI0QHAQ8_W/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1PfjLvTFpVY2apLRQJ0Zkc8CI0QHAQ8_W",
       },
-	   {
+      {
         title: "Dawah Monthly: Oct 2013",
-	    description: "Who Made You: Religion and Modern Science",
-	    category: "Beginner",
-		status: "New",
-	    type: "PDF Magazine",
-	    icon: AlarmClockCheck,
-	    driveUrl: "https://drive.google.com/file/d/1Rt1vP0s3-fcnDiVtAcEEwXguYcsvSXzb/view?usp=sharing",
-	    downloadUrl: "https://drive.google.com/uc?export=download&id=1Rt1vP0s3-fcnDiVtAcEEwXguYcsvSXzb",
+        description: "Who Made You: Religion and Modern Science",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Magazine",
+        icon: AlarmClockCheck,
+        driveUrl: "https://drive.google.com/file/d/1Rt1vP0s3-fcnDiVtAcEEwXguYcsvSXzb/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1Rt1vP0s3-fcnDiVtAcEEwXguYcsvSXzb",
       },
       {
         title: "Dawah Monthly: Nov 2013",
@@ -602,17 +658,17 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1QcKqLcvMlrZzFBj4rRZPOCUf93QoRJa4/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1QcKqLcvMlrZzFBj4rRZPOCUf93QoRJa4",
       },
-	   {
+      {
         title: "Dawah Monthly: May 2014",
         description: "Salvation-Blood or Mercy: Yusuf Estes explains",
         category: "Intermediate",
-    	status: "New",
+        status: "New",
         type: "PDF Magazine",
         icon: Notebook,
         driveUrl: "https://drive.google.com/file/d/1CIpv0wrm8v-9elVfLdpQczDJHP6mzaIR/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1CIpv0wrm8v-9elVfLdpQczDJHP6mzaIR",
       },
-		{
+      {
         title: "Dawah Monthly: Jun 2014",
         description: "Poverty, Famine, War: Where is God and Why does He allow Pain & Suffering",
         category: "Intermediate",
@@ -622,7 +678,7 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1hSPQgSs3Y_0_g7wF7sfpdHO6lz-_TFXT/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1hSPQgSs3Y_0_g7wF7sfpdHO6lz-_TFXT",
       },
-		{
+      {
         title: "Dawah Monthly: Jul 2014",
         description: "Have you  taken the Jesus Test?",
         category: "Intermediate",
@@ -632,7 +688,7 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/18WvJJ_C48DzWivIILrVqnhAKbHIBGTqo/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=18WvJJ_C48DzWivIILrVqnhAKbHIBGTqo",
       },
-		{
+      {
         title: "Dawah Monthly: May 2022",
         description: "10 Things You Might Not Know about Jesus in Islam",
         category: "Intermediate",
@@ -643,7 +699,7 @@ const categories = [
         downloadUrl: "https://drive.google.com/uc?export=download&id=18hFkfp6qLR2cqR3MeeeZkV1123PhjRZU",
       },
     ],
-  },	
+  },
 ];
 
 export default function DocsPage() {
@@ -728,7 +784,6 @@ export default function DocsPage() {
                               )}
                             </div>
                           </div>
-                          {/* Note: line-clamp removed to ensure full title displays */}
                           <CardTitle className="mt-4 text-lg">{resource.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
