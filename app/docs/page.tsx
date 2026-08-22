@@ -402,6 +402,16 @@ const categories = [
         driveUrl: "/docs/protestantism-ii.pdf",
         downloadUrl: "/docs/protestantism-ii.pdf",
       },
+         {
+        title: "Buddhism",
+        description: "A comparative look to understand, experience, compare, and engage with Buddhist practitioners.",
+        category: "Intermediate",
+        status: "New",
+        type: "PDF Guide",
+        icon: FileText,
+        driveUrl: "/docs/buddhism.pdf",
+        downloadUrl: "/docs/buddhism.pdf",
+      },
     ],
   },
   {
