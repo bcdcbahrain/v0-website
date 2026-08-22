@@ -292,20 +292,76 @@ const categories = [
     ],
   },
   {
-    id: "comparative-religion",
-    title: "Comparative Religion",
-    description: "Objective studies and comparative analysis on world religions and traditions.",
-    resources: [
-      {
-        title: "Hinduism Architecture & Beliefs",
-        description: "An exploratory overview of Hindu architectural symbolism and core traditions.",
-        category: "Intermediate",
-        status: "New",
-        type: "PDF Guide",
-        icon: Globe,
-        driveUrl: "/docs/hinduism-architecture.pdf",
-        downloadUrl: "/docs/hinduism-architecture.pdf",
-      },
+  id: "comparative-religion",
+  title: "Comparative Religion",
+  description: "Objective studies and comparative analysis on world religions and traditions.",
+  resources: [
+    {
+      title: "Hinduism Architecture & Beliefs",
+      description:
+        "An exploratory overview of Hindu religious architecture, beliefs, traditions, and the conceptual framework underlying Hindu religious thought.",
+      category: "Intermediate",
+      status: "New",
+      type: "PDF Guide",
+      icon: Globe,
+      driveUrl: "/docs/hinduism-architecture.pdf",
+      downloadUrl: "/docs/hinduism-architecture.pdf",
+    },
+    {
+      title: "Hindu Scriptures I",
+      description:
+        "A study of the principal Hindu scriptures and textual traditions, providing context for understanding their origins, authority, and religious significance.",
+      category: "Intermediate",
+      status: "New",
+      type: "PDF Guide",
+      icon: BookOpen,
+      driveUrl: "/docs/hindu-scriptures-i.pdf",
+      downloadUrl: "/docs/hindu-scriptures-i.pdf",
+    },
+    {
+      title: "Hindu Scriptures II",
+      description:
+        "A continuation of the study of Hindu scriptures, exploring additional texts, traditions, themes, and their place within Hindu religious thought.",
+      category: "Intermediate",
+      status: "New",
+      type: "PDF Guide",
+      icon: BookOpen,
+      driveUrl: "/docs/hindu-scriptures-ii.pdf",
+      downloadUrl: "/docs/hindu-scriptures-ii.pdf",
+    },
+       {
+      title: "Hindu Pantheon",
+      description:
+        "An introductory comparative study of the major deities, divine figures, and religious concepts found within the Hindu pantheon.",
+      category: "Intermediate",
+      status: "New",
+      type: "PDF Guide",
+      icon: Globe,
+      driveUrl: "/docs/hindu-pantheon.pdf",
+      downloadUrl: "/docs/hindu-pantheon.pdf",
+    },
+    {
+      title: "Catholicism I",
+      description:
+        "An introductory study of Catholic Christianity, examining its beliefs, teachings, traditions, and distinctive theological framework.",
+      category: "Intermediate",
+      status: "New",
+      type: "PDF Guide",
+      icon: Globe,
+      driveUrl: "/docs/catholicism-i.pdf",
+      downloadUrl: "/docs/catholicism-i.pdf",
+    },
+    {
+      title: "Catholicism II",
+      description:
+        "A continuation of the study of Catholic Christianity, exploring further beliefs, practices, traditions, and theological concepts relevant to comparative religious study.",
+      category: "Intermediate",
+      status: "New",
+      type: "PDF Guide",
+      icon: Globe,
+      driveUrl: "/docs/catholicism-ii.pdf",
+      downloadUrl: "/docs/catholicism-ii.pdf",
+    },
       {
         title: "Judaism: Part I",
         description: "An introductory overview of Jewish history, scripture, and core theological beliefs.",
