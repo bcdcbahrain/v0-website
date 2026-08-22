@@ -297,6 +297,28 @@ const categories = [
   description: "Objective studies and comparative analysis on world religions and traditions.",
   resources: [
     {
+      title: "Catholicism I",
+      description:
+        "An introductory study of Catholic Christianity, examining its beliefs, teachings, traditions, and distinctive theological framework.",
+      category: "Intermediate",
+      status: "New",
+      type: "PDF Guide",
+      icon: Globe,
+      driveUrl: "/docs/catholicism-i.pdf",
+      downloadUrl: "/docs/catholicism-i.pdf",
+    },
+    {
+      title: "Catholicism II",
+      description:
+        "A continuation of the study of Catholic Christianity, exploring further beliefs, practices, traditions, and theological concepts relevant to comparative religious study.",
+      category: "Intermediate",
+      status: "New",
+      type: "PDF Guide",
+      icon: Globe,
+      driveUrl: "/docs/catholicism-ii.pdf",
+      downloadUrl: "/docs/catholicism-ii.pdf",
+    },
+        {
       title: "Hinduism Architecture & Beliefs",
       description:
         "An exploratory overview of Hindu religious architecture, beliefs, traditions, and the conceptual framework underlying Hindu religious thought.",
@@ -339,28 +361,6 @@ const categories = [
       icon: Globe,
       driveUrl: "/docs/hindu-pantheon.pdf",
       downloadUrl: "/docs/hindu-pantheon.pdf",
-    },
-    {
-      title: "Catholicism I",
-      description:
-        "An introductory study of Catholic Christianity, examining its beliefs, teachings, traditions, and distinctive theological framework.",
-      category: "Intermediate",
-      status: "New",
-      type: "PDF Guide",
-      icon: Globe,
-      driveUrl: "/docs/catholicism-i.pdf",
-      downloadUrl: "/docs/catholicism-i.pdf",
-    },
-    {
-      title: "Catholicism II",
-      description:
-        "A continuation of the study of Catholic Christianity, exploring further beliefs, practices, traditions, and theological concepts relevant to comparative religious study.",
-      category: "Intermediate",
-      status: "New",
-      type: "PDF Guide",
-      icon: Globe,
-      driveUrl: "/docs/catholicism-ii.pdf",
-      downloadUrl: "/docs/catholicism-ii.pdf",
     },
       {
         title: "Judaism: Part I",
