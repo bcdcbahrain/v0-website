@@ -55,7 +55,7 @@ const categories = [
         status: "New",
         type: "PDF & PPT Guide",
         icon: Users,
-        driveUrl: "https://cvemrafi.vercel.app/new-muslim-path.pptx",
+        driveUrl: "https://drive.google.com/file/d/1cSm6M1-GEMh_QcRrqFQw8CoD4RkIVquJ/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1cSm6M1-GEMh_QcRrqFQw8CoD4RkIVquJ",
       },  
       {
