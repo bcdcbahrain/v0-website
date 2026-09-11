@@ -85,8 +85,8 @@ const categories = [
         status: "New",
         type: "PDF Guide",
         icon: FileText,
-        driveUrl: "#",
-        downloadUrl: "#",
+        driveUrl: "https://drive.google.com/file/d/17_kB3tTUMh38r4ADCgKgpsGu2CnizA-o/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=17_kB3tTUMh38r4ADCgKgpsGu2CnizA-o",
       },
       {
         title: "The Islamic Marriage Blueprint",
