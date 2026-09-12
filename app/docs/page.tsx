@@ -30,7 +30,7 @@ import {
   Sparkles,
   Scale,
   Sword,
-  Scroll
+  Scroll,
   NotebookPen,
   ChevronDown,
   ChevronUp,
