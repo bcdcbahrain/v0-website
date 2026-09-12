@@ -441,7 +441,7 @@ const categories = [
           icon: Scale,
           driveUrl: "https://drive.google.com/file/d/1iQ81bil5PMVXS4exwLXvWXNIcF_kqtJa/view?usp=sharing",
           downloadUrl: "https://drive.google.com/uc?export=download&id=1iQ81bil5PMVXS4exwLXvWXNIcF_kqtJa",
-        },
+         },
     ],
   },
   {
