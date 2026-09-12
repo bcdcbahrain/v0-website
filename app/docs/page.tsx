@@ -869,7 +869,15 @@ export default function DocsPage() {
             <section key={section.id} id={section.id} className="py-12 border-t first:border-none">
               <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-10">
-                  <h2 className="text-3xl font-bold text-foreground mb-2">{section.title}</h2>
+                  <div className="mb-2 flex flex-wrap items-center gap-3">
+                    <h2 className="text-3xl font-bold text-foreground">
+                      {section.title}
+                    </h2>
+                    <Badge variant="secondary" className="rounded-full px-3 py-1 text-xs font-medium">
+                      {section.resources.length}{" "}
+                      {section.resources.length === 1 ? "resource" : "resources"}
+                    </Badge>
+                  </div>
                   <p className="text-muted-foreground">{section.description}</p>
                 </div>
 
