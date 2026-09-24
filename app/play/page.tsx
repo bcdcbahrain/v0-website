@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '@/components/header'; 
-import Footer from '@/components/footer'; 
+import { Footer } from '@/components/footer';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Gamepad2, BookOpen, Heart, Compass, ExternalLink, Sparkles, Languages } from "lucide-react";
