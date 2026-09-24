@@ -1,11 +1,13 @@
 import React from 'react';
+import Header from '@/components/header'; 
+import Footer from '@/components/footer'; 
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Gamepad2, BookOpen, Heart, Compass, ExternalLink, Sparkles, Languages } from "lucide-react";
 
 export const metadata = {
-  title: 'Play (Learn via Play) - BCDC',
-  description: 'Interactive Islamic educational games, puzzles, and quizzes designed for New Muslims and learners.',
+  title: 'Play (Learn via Fun & Games) - BCDC',
+  description: 'Interactive Islamic educational games, puzzles, and quizzes designed for New Muslims and beginners.',
 };
 
 interface GameModule {
@@ -77,7 +79,7 @@ const gameSections: LearningSection[] = [
   {
     id: "worship",
     title: "2. Daily Worship & Living",
-    subtitle: "Practical guides on Salah (Prayer), the Islamic Calendar, and Daily Ethics",
+    subtitle: "Practical guides on Prayer (Salah), the Islamic Calendar, and Daily Ethics",
     icon: Compass,
     badgeColor: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-200",
     modules: [
@@ -138,7 +140,7 @@ const gameSections: LearningSection[] = [
   {
     id: "language",
     title: "4. Quranic Language & Dialogue",
-    subtitle: "Fun tools to learn Quranic Arabic grammar and share your faith with others",
+    subtitle: "Fun tools to learn Arabic vocabulary and share your faith with others",
     icon: Languages,
     badgeColor: "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-200",
     modules: [
@@ -184,77 +186,86 @@ const gameSections: LearningSection[] = [
 
 export default function PlayPage() {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-7xl">
-      {/* Header Banner */}
-      <div className="text-center space-y-4 mb-12">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 text-sm font-medium">
-          <Gamepad2 className="w-4 h-4" />
-          <span>Interactive Educational Portal</span>
+    <div className="min-h-screen flex flex-col">
+      {/* Header Menu */}
+      <Header />
+
+      {/* Main Page Content */}
+      <main className="flex-1 container mx-auto px-4 py-8 max-w-7xl">
+        {/* Header Banner */}
+        <div className="text-center space-y-4 mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 text-sm font-medium">
+            <Gamepad2 className="w-4 h-4" />
+            <span>Interactive Educational Portal</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+            Learn & Play
+          </h1>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Learn Islam through fun puzzles, quizzes, interactive games, and language drills.
+            Specially organized for New Muslims and beginners.
+          </p>
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-          Play or La‘ib <span className="text-emerald-600 dark:text-emerald-400">(لَعِب)</span>
-        </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Learn Islam through fun puzzles, quizzes, interactive games, and language drills.
-          Specially organized for New Muslims and beginners.
-        </p>
-      </div>
 
-      {/* Sections & Game Modules */}
-      <div className="space-y-12">
-        {gameSections.map((section) => {
-          const Icon = section.icon;
-          return (
-            <section key={section.id} className="space-y-6">
-              <div className="flex items-center gap-3 border-b pb-3">
-                <div className={`p-2 rounded-lg ${section.badgeColor}`}>
-                  <Icon className="w-6 h-6" />
+        {/* Sections & Game Modules */}
+        <div className="space-y-12">
+          {gameSections.map((section) => {
+            const Icon = section.icon;
+            return (
+              <section key={section.id} className="space-y-6">
+                <div className="flex items-center gap-3 border-b pb-3">
+                  <div className={`p-2 rounded-lg ${section.badgeColor}`}>
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-bold">{section.title}</h2>
+                    <p className="text-sm text-muted-foreground">{section.subtitle}</p>
+                  </div>
                 </div>
-                <div>
-                  <h2 className="text-2xl font-bold">{section.title}</h2>
-                  <p className="text-sm text-muted-foreground">{section.subtitle}</p>
-                </div>
-              </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {section.modules.map((module) => (
-                  <Card key={module.path} className="flex flex-col hover:shadow-md transition-shadow">
-                    <CardHeader className="pb-3">
-                      <div className="flex justify-between items-start gap-2 mb-2">
-                        <Badge variant="outline" className="text-xs">
-                          {module.category}
-                        </Badge>
-                        {module.tag && (
-                          <Badge className="bg-emerald-600 text-white text-xs">
-                            <Sparkles className="w-3 h-3 mr-1 inline" />
-                            {module.tag}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {section.modules.map((module) => (
+                    <Card key={module.path} className="flex flex-col hover:shadow-md transition-shadow">
+                      <CardHeader className="pb-3">
+                        <div className="flex justify-between items-start gap-2 mb-2">
+                          <Badge variant="outline" className="text-xs">
+                            {module.category}
                           </Badge>
-                        )}
-                      </div>
-                      <CardTitle className="text-lg">{module.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="flex-1 flex flex-col justify-between space-y-4">
-                      <CardDescription className="text-sm leading-relaxed">
-                        {module.description}
-                      </CardDescription>
-                      
-                      <a
-                        href={`${BASE_URL}${module.path}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 w-full px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-md transition-colors"
-                      >
-                        <span>Launch Game</span>
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </section>
-          );
-        })}
-      </div>
+                          {module.tag && (
+                            <Badge className="bg-emerald-600 text-white text-xs">
+                              <Sparkles className="w-3 h-3 mr-1 inline" />
+                              {module.tag}
+                            </Badge>
+                          )}
+                        </div>
+                        <CardTitle className="text-lg">{module.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent className="flex-1 flex flex-col justify-between space-y-4">
+                        <CardDescription className="text-sm leading-relaxed">
+                          {module.description}
+                        </CardDescription>
+                        
+                        <a
+                          href={`${BASE_URL}${module.path}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-2 w-full px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-md transition-colors"
+                        >
+                          <span>Launch Game</span>
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+        </div>
+      </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
