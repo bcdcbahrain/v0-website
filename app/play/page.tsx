@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '@/components/header'; 
+import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -187,12 +187,9 @@ const gameSections: LearningSection[] = [
 export default function PlayPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header Menu */}
       <Header />
 
-      {/* Main Page Content */}
       <main className="flex-1 container mx-auto px-4 py-8 max-w-7xl">
-        {/* Header Banner */}
         <div className="text-center space-y-4 mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 text-sm font-medium">
             <Gamepad2 className="w-4 h-4" />
@@ -207,7 +204,6 @@ export default function PlayPage() {
           </p>
         </div>
 
-        {/* Sections & Game Modules */}
         <div className="space-y-12">
           {gameSections.map((section) => {
             const Icon = section.icon;
@@ -264,7 +260,6 @@ export default function PlayPage() {
         </div>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );
