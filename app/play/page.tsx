@@ -192,7 +192,7 @@ export default function PlayPage() {
           <span>Interactive Educational Portal</span>
         </div>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-          La‘ib <span className="text-emerald-600 dark:text-emerald-400">(لَعِب)</span>
+          Play or La‘ib <span className="text-emerald-600 dark:text-emerald-400">(لَعِب)</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Learn Islam through fun puzzles, quizzes, interactive games, and language drills.
