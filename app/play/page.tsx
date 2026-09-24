@@ -36,14 +36,14 @@ const gameSections: LearningSection[] = [
     badgeColor: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-200",
     modules: [
       {
-        title: "KY Islam Basics",
+        title: "Islam Basics",
         description: "Foundational teachings and core creed interactive education engine.",
         category: "Aqeedah",
         path: "/web/ky-islam-basics.html",
         tag: "Recommended First"
       },
       {
-        title: "KY Islam Easy Quiz",
+        title: "Islam Easy Quiz",
         description: "Accessible beginner quiz module testing essential Islamic knowledge.",
         category: "Quiz",
         path: "/web/ky-islam-easy-quiz.html"
