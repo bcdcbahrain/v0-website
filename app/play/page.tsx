@@ -39,15 +39,7 @@ const gameSections: LearningSection[] = [
     icon: Heart,
     badgeColor: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-200",
     modules: [
-      {
-        title: "Pillars of Islam Puzzler",
-        description: "Interactive drag-and-drop puzzle introducing the 5 Pillars of Islam and 6 Articles of Faith.",
-        category: "Foundations",
-        path: "/kalam/pillars-puzzle",
-        tag: "Start Here",
-        source: "KALAM"
-      },
-      {
+           {
         title: "Islam Basics",
         description: "Foundational teachings and core creed interactive education engine.",
         category: "Aqeedah",
@@ -68,6 +60,14 @@ const gameSections: LearningSection[] = [
         category: "Puzzle",
         path: "/web/islam-match.html",
         source: "BCDC"
+      },
+       {
+        title: "Arrange Ayats Game",
+        description: "Interactive drag-and-drop puzzle introducing most popular Verses.",
+        category: "Foundations",
+        path: "/kalam/arrange-ayats",
+        tag: "Drag & Drop Game",
+        source: "KALAM"
       },
       {
         title: "Match Islamic Terms",
