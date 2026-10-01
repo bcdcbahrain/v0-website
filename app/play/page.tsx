@@ -27,7 +27,7 @@ interface GameModule {
   category: string;
   path: string;
   tag?: string;
-  external?: boolean;
+  baseUrl?: string;
 }
 
 interface LearningSection {
@@ -76,12 +76,13 @@ const gameSections: LearningSection[] = [
         path: "/web/match-islamic-terms.html",
       },
       {
-        title: "Arrange Ayats Puzzle",
-        description: "Arrange jumbled Quranic Ayats in order and learn through play.",
-        category: "Quranic Ayats",
-        path: "/games/arrange-ayats/",
+        title: "Asma-Ul-Husna Puzzle",
+        description: "Arrange jumbled Arabic and English Names of Allah in order and learn through play.",
+        category: "Names of Allah",
+        path: "/pages/asma-puzzle/",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Attributes Match (English)",
@@ -111,6 +112,7 @@ const gameSections: LearningSection[] = [
         path: "/quizzes/surah/1",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Surah Al-Ikhlas Quiz",
@@ -119,6 +121,7 @@ const gameSections: LearningSection[] = [
         path: "/quizzes/surah/112",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Surah Al-Falaq Quiz",
@@ -127,6 +130,7 @@ const gameSections: LearningSection[] = [
         path: "/quizzes/surah/113",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Surah An-Nas Quiz",
@@ -135,6 +139,7 @@ const gameSections: LearningSection[] = [
         path: "/quizzes/surah/114",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Make Quranic Ayats",
@@ -143,6 +148,7 @@ const gameSections: LearningSection[] = [
         path: "/games/quranic-ayats",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Top 10 Quranic Surahs",
@@ -185,6 +191,7 @@ const gameSections: LearningSection[] = [
         path: "https://isfin.vercel.app/",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Loan Outcomes & Takaful Quiz",
@@ -214,6 +221,7 @@ const gameSections: LearningSection[] = [
         path: "/games/memory",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "General Quiz",
@@ -222,6 +230,7 @@ const gameSections: LearningSection[] = [
         path: "/quizzes",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Category Quiz",
@@ -230,6 +239,7 @@ const gameSections: LearningSection[] = [
         path: "/quizzes/categories",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Reverse Word Quiz",
@@ -238,6 +248,7 @@ const gameSections: LearningSection[] = [
         path: "/quizzes/reverse",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Arabic Pronouns",
@@ -279,6 +290,7 @@ const gameSections: LearningSection[] = [
         path: "/prophets",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Hijra Journey Quiz",
@@ -287,6 +299,7 @@ const gameSections: LearningSection[] = [
         path: "/hijra/quiz",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Hijra Journey",
@@ -295,6 +308,7 @@ const gameSections: LearningSection[] = [
         path: "/hijra",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "40 Hadith of Imam Nawawi",
@@ -318,6 +332,7 @@ const gameSections: LearningSection[] = [
         path: "/isra-miraj",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
       {
         title: "Hajj Tamattu Journey",
@@ -326,6 +341,7 @@ const gameSections: LearningSection[] = [
         path: "https://tamatu.vercel.app/",
         external: true,
         tag: "KALAM",
+        baseUrl: KALAM_BASE_URL,
       },
     ],
   },
@@ -393,9 +409,9 @@ export default function PlayPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {section.modules.map((module) => {
-                    const href = module.external
+                    const href = module.path.startsWith("http")
                       ? module.path
-                      : `${BCDC_BASE_URL}${module.path}`;
+                      : `${module.baseUrl ?? BCDC_BASE_URL}${module.path}`;
 
                     return (
                       <Card
