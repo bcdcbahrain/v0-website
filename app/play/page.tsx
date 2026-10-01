@@ -65,7 +65,7 @@ const gameSections: LearningSection[] = [
         title: "Arrange Ayats Game",
         description: "Interactive drag-and-drop puzzle introducing most popular Verses.",
         category: "Foundations",
-        path: "/kalam/games/arrange-ayats",
+        path: "/games/arrange-ayats",
         tag: "Drag & Drop Game",
         source: "KALAM"
       },
