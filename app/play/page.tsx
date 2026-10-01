@@ -42,12 +42,6 @@ interface LearningSection {
 const BCDC_BASE_URL = "https://cvemrafi.vercel.app";
 const KALAM_BASE_URL = "https://v0-kalam.vercel.app";
 
-/*
- * KALAM's page.tsx uses relative routes for its internal games/quizzes.
- * The page also explicitly links to v0-kalam.vercel.app for the Asma-Ul-Husna
- * puzzle, so that domain is used here as the base for those relative routes.
- */
-
 const gameSections: LearningSection[] = [
   {
     id: "foundations",
