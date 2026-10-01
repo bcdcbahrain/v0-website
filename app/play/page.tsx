@@ -77,9 +77,9 @@ const gameSections: LearningSection[] = [
       },
       {
         title: "Asma-Ul-Husna Puzzle",
-        description: "Arrange jumbled Arabic and English Names of Allah in order and learn through play.",
+        description: "Match jumbled Arabic and English Names of Allah and learn through play.",
         category: "Names of Allah",
-        path: "/pages/asma-puzzle/",
+        path: "/games/matching/divine-attributes",
         external: true,
         tag: "KALAM",
         baseUrl: KALAM_BASE_URL,
