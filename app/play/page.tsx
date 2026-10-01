@@ -29,7 +29,7 @@ interface LearningSection {
 }
 
 const BASE_URL = "https://cvemrafi.vercel.app";
-const KALAM_URL = "https://kalam-iciso.vercel.app"; // KALAM interactive modules base host
+const KALAM_URL = "https://v0-kalam.vercel.app"; // KALAM interactive modules base host
 
 const gameSections: LearningSection[] = [
   {
@@ -65,7 +65,7 @@ const gameSections: LearningSection[] = [
         title: "Arrange Ayats Game",
         description: "Interactive drag-and-drop puzzle introducing most popular Verses.",
         category: "Foundations",
-        path: "/kalam/arrange-ayats",
+        path: "/kalam/games/arrange-ayats",
         tag: "Drag & Drop Game",
         source: "KALAM"
       },
