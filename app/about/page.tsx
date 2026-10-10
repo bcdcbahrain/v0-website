@@ -19,7 +19,8 @@ import {
 /* 
   Tasks to do:
   1) Compare the files on Google Drive with those linked to Docs page in BCDC site. Add the files that are on Drive but not on Docs page. Check ones like Dopamine Trap
-  2) We must eventually have IQRA like question and answer challenges for Dawah Topics. Maybe select a better name than IQRA if possible. 
+  2) We must eventually have IQRA like question and answer challenges for Dawah Topics. Maybe select a better name than IQRA if possible.
+  3) Dawah Trainer could be made from buzz quiz model, with one buzz quiz for each religion, namely one for Christianity, one quiz for Protestants.
 */
 
 
