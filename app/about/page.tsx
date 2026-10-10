@@ -16,6 +16,13 @@ import {
   MessageCircle,
 } from "lucide-react";
 
+/* 
+  Tasks to do:
+  1) Compare the files on Google Drive with those linked to Docs page in BCDC site. Add the files that are on Drive but not on Docs page. Check ones like Dopamine Trap
+  2) We must eventually have IQRA like question and answer challenges for Dawah Topics. Maybe select a better name than IQRA if possible. 
+*/
+
+
 const values = [
   {
     icon: Target,
