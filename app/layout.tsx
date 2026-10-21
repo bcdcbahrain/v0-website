@@ -15,7 +15,7 @@ const notoSansArabic = Noto_Sans_Arabic({
 
 export const metadata: Metadata = {
   title: {
-    default: 'BCDC 🌎 Busaiteen Chat Dialogue Centre 🇧🇭',
+    default: '🕌 BCDC 🌎 Busaiteen Chat Dialogue Centre 🇧🇭',
     template: '%s | BCDC',
   },
   description: '🕌Busaiteen Chat Dialogue Centre 🕋 Conveying the correct creed of faith to seekers of truth worldwide 🌐 Based in the Kingdom of Bahrain 🇧🇭',
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://bcdc.vercel.app',
-    siteName: 'BCDC - Busaiteen Chat Dialogue Centre',
-    title: 'BCDC - Busaiteen Chat Dialogue Centre',
-    description: 'Conveying the correct creed of faith to seekers of truth worldwide.',
+    siteName: '🕌 BCDC 🌎 Busaiteen Chat Dialogue Centre 🇧🇭',
+    title: '🕌 BCDC 🌎 Busaiteen Chat Dialogue Centre 🇧🇭',
+    description: '🕋 Conveying the correct creed of faith to seekers of truth worldwide 🌐',
     images: [
       {
         url: '/images/bcdc-logo.jpg',
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BCDC - Busaiteen Chat Dialogue Centre',
-    description: 'Conveying the correct creed of faith to seekers of truth worldwide.',
+    title: '🕌 BCDC 🌎 Busaiteen Chat Dialogue Centre 🇧🇭',
+    description: '🕋 Conveying the correct creed of faith to seekers of truth worldwide 🌐',
     images: ['/images/bcdc-logo.jpg'],
   },
   icons: {
