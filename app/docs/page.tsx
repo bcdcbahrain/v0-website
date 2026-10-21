@@ -260,8 +260,8 @@ const categories = [
         status: "New",
         type: "PDF Guide",
         icon: Users,
-        driveUrl: "https://drive.google.com/file/d/1BE3tE4haQC5c0Gv3GOEK2Di8FfO29Oin/view?usp=sharing",
-        downloadUrl: "https://drive.google.com/uc?export=download&id=1BE3tE4haQC5c0Gv3GOEK2Di8FfO29Oin",
+        driveUrl: "https://drive.google.com/file/d/1mk2mdB3HygqWXPfCr_mfLupsaSR7MlMt/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1mk2mdB3HygqWXPfCr_mfLupsaSR7MlMt",
       },
       {
         title: "Wudu Essentials",
