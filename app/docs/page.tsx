@@ -253,6 +253,16 @@ const categories = [
         driveUrl: "https://drive.google.com/file/d/1hBD3JS8l9QPI1mivDTRzmZD9SL6F8UQM/view?usp=sharing",
         downloadUrl: "https://drive.google.com/uc?export=download&id=1hBD3JS8l9QPI1mivDTRzmZD9SL6F8UQM",
       },
+       {
+        title: "The Ecology of Pure Giving",
+        description: "A Visual Exegesis of Wealth, Intention, and Harvest",
+        category: "Beginner",
+        status: "New",
+        type: "PDF Guide",
+        icon: Users,
+        driveUrl: "https://drive.google.com/file/d/1BE3tE4haQC5c0Gv3GOEK2Di8FfO29Oin/view?usp=sharing",
+        downloadUrl: "https://drive.google.com/uc?export=download&id=1BE3tE4haQC5c0Gv3GOEK2Di8FfO29Oin",
+      },
       {
         title: "Wudu Essentials",
         description: "An essential guide to ritual purification before prayer",
