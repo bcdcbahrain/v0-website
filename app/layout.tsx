@@ -15,10 +15,10 @@ const notoSansArabic = Noto_Sans_Arabic({
 
 export const metadata: Metadata = {
   title: {
-    default: 'BCDC - Busaiteen Chat Dialogue Centre',
+    default: 'BCDC 🌎 Busaiteen Chat Dialogue Centre 🇧🇭',
     template: '%s | BCDC',
   },
-  description: 'Busaiteen Chat Dialogue Centre - Conveying the correct creed of faith to seekers of truth worldwide. Based in the Kingdom of Bahrain.',
+  description: '🕌Busaiteen Chat Dialogue Centre 🕋 Conveying the correct creed of faith to seekers of truth worldwide 🌐 Based in the Kingdom of Bahrain 🇧🇭',
   keywords: ['Islam', 'Dialogue', 'Guidance', 'Bahrain', 'BCDC', 'Islamic Resources', 'Chat', 'Faith'],
   authors: [{ name: 'BCDC Bahrain' }],
   creator: 'BCDC Bahrain',
