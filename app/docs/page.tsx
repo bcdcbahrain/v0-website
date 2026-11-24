@@ -846,6 +846,12 @@ export default function DocsPage() {
   // Track which sections are expanded
   const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({});
 
+  // Calculate the grand total of all resources across all categories
+  const totalResources = categories.reduce(
+    (sum, category) => sum + category.resources.length,
+    0
+  );
+
   const toggleSection = (sectionId: string) => {
     setExpandedSections((prev) => ({
       ...prev,
@@ -866,9 +872,14 @@ export default function DocsPage() {
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-6">
                   <BookOpen className="h-8 w-8 text-primary" />
                 </div>
-                <h1 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl mb-4">
-                  Islamic Resources & Documentation
-                </h1>
+                <div className="mb-4 flex flex-col items-center justify-center gap-3">
+                    <h1 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+                      Islamic Resources & Documentation
+                    </h1>
+                    <Badge variant="secondary" className="rounded-full px-4 py-1.5 text-sm font-medium">
+                      {totalResources} {totalResources === 1 ? "Total Resource" : "Total Resources"}
+                    </Badge>
+                </div>
                 <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-10">
                   Explore our curated library. Look for the status badges to find our latest additions and upcoming guides.
                 </p>
